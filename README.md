@@ -1,8 +1,8 @@
 # Golang-Batch2.  
 ### Overview
 1. Go Features
-    1. Advantages
-    2. When to use go?
+1. Advantages
+2. When to use go?
 1. Installation (Windows & Mac)
 2. Hello World in Golang
 3. Golang code structures
