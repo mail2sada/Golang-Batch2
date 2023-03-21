@@ -5,22 +5,25 @@
 3. Golang code structures
 1. Identifiers in Golang
 2. Keywords in Golang
-3. Data Types
-4. Variables
-5. Constants
-6. Rune in Golang
-7. Operators in Golang
-8. Scope of Variables
-9. Type Casting
-10. var Keyword in Golang
-11. Short Declaration Operator(:=)
-12. var keyword vs short declaration operator
-13. Decision Making Statements
-14. Loops in Golang
-15. Loop Control Statements
-16. Switch Statement in Go
+
+### Go-Building Blocks
+1. Data Types
+2. Variables
+3. Constants
+4. Rune in Golang
+5. Operators in Golang
+6. Scope of Variables
+7. Type Casting
+8. var Keyword in Golang
+9. Short Declaration Operator(:=)
+10. var keyword vs short declaration operator
+11. Decision Making Statements
+12. Loops in Golang
+13. Loop Control Statements
+14. Switch Statement in Go
 
 
+### Array and Slice
 1. Arrays in Golang, 
 2. Copying an Array into Another Array in Golang, 
 3. Passing an Array to a Function in Golang, 
@@ -37,6 +40,7 @@
 14. Reverse, 
 15. Search Functions
 
+### Strings 
 1. Strings in Golang
 2. Different ways to compare Strings
 3. Different ways to concatenate two strings
