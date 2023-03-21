@@ -1,5 +1,8 @@
 # Golang-Batch2.  
-### Golang overview,  
+### Overview
+1. Go Features
+    1. Advantages
+    2. When to use go?
 1. Installation (Windows & Mac)
 2. Hello World in Golang
 3. Golang code structures
@@ -105,7 +108,7 @@
 3. Polymorphism Using Interfaces
 4. Methods in connection with interfaces
 
-Error Handling
+### Error Handling
 1. error interface
 2. Advantages of using error as a type
 3. Different ways of creating an error
