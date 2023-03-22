@@ -16,7 +16,7 @@
 4. Rune in Golang
 5. Operators in Golang
 6. Scope of Variables
-7. Type Casting
+7. Type Conversion
 9. Short Declaration Operator(:=)
 10. var keyword vs short declaration operator
 11. Decision Making Statements
@@ -164,6 +164,16 @@
     1. Sync package overview
     2. Waitgroups
     3. Mutex
+    4. Conditional Variables
+    5. Atomic
+    6. Sync Once
+    7. Sync Pool
+7. Concurrency Patterns
+    1. Piplines
+    2. Fan out & Fan in
+    3. Cancelling go-routines
+
+
 7. Solving Dining Philosopher problem
 
 ### Context Interface

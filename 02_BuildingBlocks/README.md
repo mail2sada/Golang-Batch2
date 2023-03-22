@@ -505,7 +505,50 @@
 	    
         }
 
-7. ## Type Casting
+7. ## Type Conversion
+
+    Type conversion happens when we assign the value of one data type to another. Statically typed languages like C/C++, Java, provide the support for Implicit Type Conversion but Golang doesn't, as it doesn’t support the automatic type conversion or implicit iype conversion even if the data types are compatible. The reason for this is the strong sype system of the golang doesn’t allow . For type conversion, you must perform explicit conversion. 
+
+    As per Golang Specification, there is no typecasting word or terminology in Golang. If you will try to search Type Casting in Golang Specifications or Documentation, you will find nothing like this. There is only type conversion. In other programming languages, typecasting is also termed as the type conversion.
+
+    What is the need for Type Conversion? 
+    Well, if you need to take advantage of certain characteristics of data type hierarchies, then we have to change entities from one data type into another. The general syntax for converting a value val to a type T is T(val). 
+
+            var integer int = 100
+
+            var float float64 = float64(integer)
+
+            var unsigneInt uint = 1000
+
+            integer = int(unsignedInt)
+
+        Example
+            package main
+
+            import "fmt"
+
+            func main() {
+	            fmt.Println("Demo: Type conversion")
+
+	            var physics, chemestry, maths, english, hindi int = 99, 96, 100, 97, 80
+
+	            fmt.Println("Marks in Physics:", physics)
+                fmt.Println("Marks in Chemestry:", chemestry)
+                fmt.Println("Marks in Maths:", maths)
+                fmt.Println("Marks in English:", english)
+                fmt.Println("Marks in hindi:", hindi)
+
+                var subject = 5
+
+                var totalMarks = physics + chemestry + maths + english + hindi
+
+                var average float64 = float64(totalMarks) / float64(subject)
+
+                fmt.Println("Average score is ", average)
+            }
+
+
+            
 9. ## Short Declaration Operator(:=)
 10. ## var keyword vs short declaration operator
 11. ## Decision Making Statements
