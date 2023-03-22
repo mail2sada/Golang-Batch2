@@ -16,6 +16,7 @@
            Go language supports integers, floating point numbers and complex numbers
 
            ### Intgers types:
+           <i><b>
 
         int8	    8-bit signed integer
 
@@ -42,7 +43,7 @@
         byte    It is a synonym of uint8.
 
         uintptr	It is an unsigned integer type. Its width is not defined, but its can hold all the bits of a pointer value.
-
+         </i></b>
 
         2. strings
         3. booleans
