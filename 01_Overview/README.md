@@ -108,7 +108,7 @@ The language has just entered into its version 1.21 But, has gained a huge momen
     every go file belongs to a package
     */
 
-        package main // this file belongs to main package.
+        package main // this go source belongs to main package.
 
         import "fmt" // fmt package is imported, so that it functionalities can be used
 
@@ -124,6 +124,12 @@ The language has just entered into its version 1.21 But, has gained a huge momen
 
         }
     <b></i>
+    https://github.com/mail2sada/Golang-Batch2/blob/main/01_Overview/helloworld.go
+
+    Lets analyze source code
+    keyword:
+            package main
+
 6. ## Golang code structures
 7. ## Identifiers in Golang
 8. ## Keywords in Golang

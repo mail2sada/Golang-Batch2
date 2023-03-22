@@ -5,7 +5,7 @@
 2. every go file belongs to a package
 */
 
-package main // this file belongs to main package.
+package main // this go source belongs to main package.
 
 import "fmt" // fmt package is imported, so that it functionalities can be used
 
