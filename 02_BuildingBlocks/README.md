@@ -13,12 +13,12 @@
 
     Data Types | Basic | Aggregate | Reference | Interface | 
     --- | --- | --- | --- |--- |
-    1 | Numbers | Array | Silice | interface | 
-    1 | Numbers | Array | Silice | interface | 
-    1 | Numbers | Array | Silice | interface | 
-    1 | Numbers | Array | Silice | interface | 
-    1 | Numbers | Array | Silice | interface | 
-    1 | Numbers | Array | Silice | interface | 
+    1 | Numbers | Array | Pointers | interface | 
+    2 | strings | structs | Silice |  | 
+    3 | booleans |        | maps |  | 
+    4 |         |         | functions |  | 
+    5 |         |         | channels |  | 
+    
 
     1. Basic types
         1. Numbers
