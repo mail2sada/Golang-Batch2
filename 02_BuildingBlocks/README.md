@@ -69,6 +69,8 @@
 2. ## Variables
     A typical program uses various values that may change during its execution. variable can store temporarily in the Random Access Memory of the computer and these values in this part of memory vary throughout the execution and hence another term for this came which is known as Variables. So basically, a Variable is a placeholder of the information which can be changed at runtime. And variables allow to Retrieve and Manipulate the stored information.
 
+    1. Delcaring variables
+
     var keyword is used to specify a variable.
 
             Syntax 1:
@@ -122,7 +124,63 @@
 
             }
 
-            
+            https://github.com/mail2sada/Golang-Batch2/blob/main/02_BuildingBlocks/01_Variables/var.go
+
+    1. Declaring multiple variables.
+
+        Multiple variable can be declared as below.
+
+            syntax:
+            var var1, var2, var3 type = exp1, exp2, exp3
+
+            Example: 
+            var v1, v2, v3 uint8 = 10, 11, 12
+
+            syntax:
+            var var1, var2, var3 type
+
+            Expample:
+            var v1, v2, v3 int
+            v1 = 10
+            v2 = -10
+            v3 = 1000
+
+            var var1, var2, var3 = exp1, exp2, exp3
+
+            Example:
+
+            var myInt, myFloat, myString = 10, 34.22, "Hello everyone!!!"
+
+            Example:
+
+            package main
+
+            import "fmt"
+
+            func main() {
+	            fmt.Println("Demo: declarining multiple variables")
+
+	            var v1, v2, v3 uint = 10, 20, 30
+
+	            fmt.Println("Value of v1 is", v1, "\nValure of v2 ", v2, "\nValue of v3 ", v3)
+
+	            var t1, t2, t3 int
+
+	            t1 = 10
+
+	            t2 = 20
+
+	            t3 = -100
+
+	            fmt.Println("Value of t1 is", t1, "\nValure of t2 ", t2, "\nValue of t3 ", t3)
+
+	            var myInt, myFloat, myString, myBool = 55, 36.82, "Hello everyone", true
+
+	            fmt.Printf("Type of myInt %T\nType of myFloat %T\nType of myString %T\nType of myBool %T", myInt, myFloat, myString, myBool)
+
+	            fmt.Println("Value of myInt, myFloat, myString and myBool are", myInt, myFloat, myString, myBool)
+
+            }       
 
 
 
