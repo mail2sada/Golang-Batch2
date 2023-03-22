@@ -127,9 +127,14 @@ The language has just entered into its version 1.21 But, has gained a huge momen
     https://github.com/mail2sada/Golang-Batch2/blob/main/01_Overview/helloworld.go
 
     Lets analyze source code
-    keyword:
-    
+
             package main
+
+    <b><i>package</i></b> key word defines the package where the source code belongs. Every go source must belong to a package.
+
+            import "fmt"
+
+    <b><i>import</i></b> key word specifies which external packages are getting used. We can import external package, this enables code reusablity.
 
 6. ## Golang code structures
 7. ## Identifiers in Golang
