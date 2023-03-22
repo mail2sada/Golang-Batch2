@@ -130,11 +130,19 @@ The language has just entered into its version 1.21 But, has gained a huge momen
 
             package main
 
-    <b><i>package</i></b> key word defines the package where the source code belongs. Every go source must belong to a package.
+    <b><i>package</i></b> key word defines the package where the source code belongs. Every go source must belong to a package. helloword.go belongs to main package
 
             import "fmt"
 
-    <b><i>import</i></b> key word specifies which external packages are getting used. We can import external package, this enables code reusablity.
+    <b><i>import</i></b> key word specifies which external packages are getting used. We can import external package, this enables code reusablity. We are importing fmt package
+
+            func main()
+
+    func key word is used to define a function, we are defining main function. main() function in main package is the entry point of execution.  Functions are enclosed under curly braces.
+
+            fmt.Println("Welcome to Mavenir Go lang training")
+    
+    fmt.Println is a function defined in fmt package this will print the specified data. Here wre are printing "Welcome to Mavenir Go lang training" 
 
 6. ## Golang code structures
 7. ## Identifiers in Golang
