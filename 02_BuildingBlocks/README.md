@@ -227,9 +227,8 @@
 	                fmt.Println("Value of hour:", hour)
 	
 	                fmt.Println(greeting)
-                }
-
-
+                }   
+    https://github.com/mail2sada/Golang-Batch2/blob/main/02_BuildingBlocks/02_Constant/constant.go
 
 4. ## Rune in Golang
 5. ## Operators in Golang
