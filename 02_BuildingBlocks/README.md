@@ -40,23 +40,14 @@
     byte | It is a synonym of uint8. | 
     uintptr | It is an unsigned integer type. Its width is not defined, but its can hold all the bits of a pointer value.| 
 
-
         2. Floating Point (Franctional numbers)
+    Data Type| 	Description | 
+     --- | --- | 
+    float32|	32-bit IEEE 754 floating-point number|
+    float64|	64-bit IEEE 754 floating-point number|
+
+    
         3. Complex Numbers
-
-  
-
-
-        As show in above table basic data types are of 3 types, Numbers, Strings and Booleans,     
-
-uint16 | 16-bit unsigned integer | 
-uint32 | 32-bit unsigned integer | 
-uint64 | 64-bit unsigned integer | 
-int | Both int and uint contain same size, either 32 or 64 bit. | 
-uint | Both int and uint contain same size, either 32 or 64 bit. | 
-rune | It is a synonym of int32 and also represent Unicode code points. | 
-byte | It is a synonym of uint8. | 
-uintptr | It is an unsigned integer type. Its width is not defined, but its can hold all the bits of a pointer value.| 
 
         ###
 
