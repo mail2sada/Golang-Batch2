@@ -217,6 +217,16 @@ The language has just entered into its version 1.21 But, has gained a huge momen
 
 	        fmt.Println("Hello Mavenir team")
         }
+
+        https://github.com/mail2sada/Golang-Batch2/blob/main/01_Overview/keyword.go
+
+    Go has 25 keywords.
+
+        break       case    chan    const       continue
+        default     defer   else    fallthrough for
+        func        go      goto    if          import  
+        interface   map     package range       return  
+        select      struct  switch  type        var
     
      
 
