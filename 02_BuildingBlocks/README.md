@@ -273,6 +273,113 @@
         } 
     
 5. ## Operators in Golang
+    Operators are the foundation of any programming language. Thus the functionality of the Go language is incomplete without the use of operators. Operators allow us to perform different kinds of operations on operands. In the Go language, operators Can be categorized based on their different functionality:
+
+    1. Arithmetic Operators
+    2. Relational Operators
+    3. Logical Operators
+    4. Bitwise Operators
+    5. Assignment Operators
+    6. Misc Operators
+
+    ### Arithmetic Operators
+    These are used to perform arithmetic/mathematical operations on operands in Go language: 
+
+    1. Addition: The ‘+’ operator adds two operands. For example, x+y.
+    2. Subtraction: The ‘-‘ operator subtracts two operands. For example, x-y.
+    3. Multiplication: The ‘*’ operator multiplies two operands. For example, x*y.
+    4. Division: The ‘/’ operator divides the first operand by the second. For example, x/y.
+    5. Modulus: The ‘%’ operator returns the remainder when the first operand is divided by the second. For example, x%y.
+
+        package main
+
+        import "fmt"
+
+        func main() {
+	        fmt.Println("Demo: Operators...")
+
+	        var a int = 500
+
+	        var b int = 100
+
+	        fmt.Println("Value of a is ", a, "\nValue of b is ", b)
+
+	        var result = a + b
+
+	        fmt.Println("Result of a, b addition is ", result)
+
+	        result = a - b
+
+	        fmt.Println("Result of a, b substraction is ", result)
+
+	        result = a * b
+
+	        fmt.Println("Result of a, b multiplication is ", result)
+
+	        result = a / b
+
+	        fmt.Println("Result of a, b division is ", result)
+
+	        result = a % b
+
+	        fmt.Println("Result of a, b remainder is ", result)
+
+        }
+
+    ###  Relational Operators
+    Relational operators are used for the comparison of two values. Let’s see them one by one:
+
+    1. ‘=='(Equal To) operator checks whether the two given operands are equal or not. If so, it returns true. Otherwise, it returns false. For example, 5==5 will return true.
+    2. ‘!='(Not Equal To) operator checks whether the two given operands are equal or not. If not, it returns true. Otherwise, it returns false. It is the exact boolean complement of the ‘==’ operator. For example, 5!=5 will return false.
+    3. ‘>'(Greater Than)operator checks whether the first operand is greater than the second operand. If so, it returns true. Otherwise, it returns false. For example, 6>5 will return true.
+    4. ‘<‘(Less Than)operator checks whether the first operand is lesser than the second operand. If so, it returns true. Otherwise, it returns false. For example, 6<5 will return false.
+    5. ‘>='(Greater Than Equal To)operator checks whether the first operand is greater than or equal to the second operand. If so, it returns true. Otherwise, it returns false. For example, 5>=5 will return true.
+    6. ‘<='(Less Than Equal To)operator checks whether the first operand is lesser than or equal to the second operand. If so, it returns true. Otherwise, it returns false. For example, 5<=5 will also return true.
+
+    Example:
+        package main
+
+        import "fmt"
+
+        func main() {
+	        fmt.Println("Demo relational operators...")
+
+	        var a = 50
+
+	        var b = 60
+
+	        fmt.Println("Value of a is ", a, "\nValue of b is ", b)
+
+	        var result = a == b
+
+	        fmt.Println("Result of  a == b is", result)
+
+	        result = a != b
+
+	        fmt.Println("Result of  a != b is", result)
+
+	        result = a > b
+
+	        fmt.Println("Result of  a > b is", result)
+
+	        result = a < b
+
+	        fmt.Println("Result of  a < b is", result)
+
+	        result = a >= b
+
+	        fmt.Println("Result of  a >= b is", result)
+
+	        result = a <= b
+
+	        fmt.Println("Result of  a <= b is", result)
+
+        }
+
+
+
+
+
 6. ## Scope of Variables
 7. ## Type Casting
 9. ## Short Declaration Operator(:=)
