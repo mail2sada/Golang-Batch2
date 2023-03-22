@@ -18,15 +18,28 @@
     
 
     1. Basic Data types.
-        As show in above table basic data types are of 3 types, Numbers, Strings and Booleans, 
 
- Data Types| Numbers | strings | booleans |
-    ---    | ---     | ---     | ---      |
-    1      | Integers| Strings   | Boolean |
-    2      | Floating point Numbers        |  |    |
-    3      | Complex Numbers        |         |      | 
+        Number types are of 3 types
 
-    
+        1. Integers (Whole numbers +ve and -ve)
+            Below list of data types are supported in Integers
+
+    Integer Types | Description |
+    --- | --- | 
+    int8 | 8-bit signed integer | 
+    int16 | 16-bit signed integer | 
+    int32 | 32-bit signed integer |
+    int64 | 64-bit signed integer | 
+    uint8 | 8-bit unsigned integer| 
+
+
+        2. Floating Point (Franctional numbers)
+        3. Complex Numbers
+
+  
+
+
+        As show in above table basic data types are of 3 types, Numbers, Strings and Booleans,     
 
         int8	    8-bit signed integer
 
@@ -53,7 +66,6 @@
         byte    It is a synonym of uint8.
 
         uintptr	It is an unsigned integer type. Its width is not defined, but its can hold all the bits of a pointer value.
-         </i></b>
 
         ###
 
