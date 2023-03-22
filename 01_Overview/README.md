@@ -187,6 +187,16 @@ The language has just entered into its version 1.21 But, has gained a huge momen
             make, len, cap, new, append, copy, close, 
             delete, complex, real, imag, panic, recover
 
+    Identifier represented by the underscore character(_) is known as a blank identifier. It is used as an anonymous placeholder instead of a regular identifier, and it has a special meaning in declarations, as an operand, and in assignments.
+
+    Identifier which is allowed to access it from another package is known as the exported identifier. The exported identifiers are those identifiers which obey the following conditions:
+
+        The first character of the exported identifier’s name should be in the Unicode upper case letter.
+        
+        The identifier should be declared in the package block, or it is a variable name, or it is a method name.
+
+    The uniqueness of the identifiers means the identifier is unique from the other set of the identifiers available in your program, or in the package and they are not exported.
+
 
 
 8. ## Keywords in Golang
