@@ -609,8 +609,8 @@
                 // Statements to execute if
                 // condition is true
             }
-            
-        ![alt text](https://github.com/mail2sada/Golang-Batch2/blob/main/zzzsupport/Screenshot%202023-03-22%20at%2011.03.55%20PM.png)
+
+    ![alt text](https://github.com/mail2sada/Golang-Batch2/blob/main/zzzsupport/Screenshot%202023-03-22%20at%2011.03.55%20PM.png)
 
 
 12. ## Loops in Golang
