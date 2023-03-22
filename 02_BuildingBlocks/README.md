@@ -242,19 +242,6 @@
     1. Rune Literal
         It represents a Rune constant, where an integer value recognizes a Unicode code point. In Go language, a Rune Literal is expressed as one or more characters enclosed in single quotes like ‘g’, ‘\t’, etc. In between single quotes, you are allowed to place any character except a newline and an unescaped single quote. Here, these single-quoted characters themselves represent the Unicode value of the given character and multi-character sequences with a backslash (at the beginning of the multi-character sequence) encode values in a different format. In Rune Literals, all the sequences that start with a backslash are illegal, only the following single-character escapes represent special values when you use them with a backslash: 
 
-
-\a	U+0007	Alert or Bell
-\b	U+0008	backspace
-\f	U+000C	form feed
-\n	U+000A	line feed or newline
-\r	U+000D	carriage return
-\t	U+0009	horizontal tab
-\v	U+000b	vertical tab
-\\	U+005c	backslash
-\’	U+0027	single-quote
-\”	U+0022	double quote(legal only in string literals)
-
-
     Character | Unicode | Description |
     --- | --- | --- |
     \a	| U+0007	| Alert or Bell | 
@@ -266,12 +253,25 @@
     \v	| U+000b	| vertical tab | 
     \\	| U+005c	| backslash | 
     \’	| U+0027	| single-quote | 
-    \”	| U+0022	| double quote(legal only in string literals) | 
+    \”	| U+0022	| double quote(legal only in string literals) |     
+
+
+    Example
+            package main
+
+            import "fmt"
+
+            func main() {
+	            fmt.Println("Demo: Rune...")
+
+	            var rune0 rune = '♛'
+	            var rune1, rune2, rune3, rune4 rune = '♠', '♧', '♡', '♬'
+
+	            fmt.Println(rune0, rune1, rune2, rune3, rune4)
+
+	            fmt.Printf("%c %c %c %c %c", rune0, rune1, rune2, rune3, rune4)
+        } 
     
-
-
-
-
 5. ## Operators in Golang
 6. ## Scope of Variables
 7. ## Type Casting
