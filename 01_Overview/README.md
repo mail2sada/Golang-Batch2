@@ -1,6 +1,7 @@
 ### Overview
 
 1. Introduction
+
 Also called Golang, Go is an open-source, statically typed,  and compiled programming language designed by Rob Pike, Robert Griesemer, and Ken Thompson. The language, that appeared in the market in 2009, was designed with an intention to enhance programming productivity in the era of networked machines, multicore, and huge codebases. Something for which the Google team picked the best characteristics of the popular languages.
       
     1. Static typing and runtime efficiency of C++.
