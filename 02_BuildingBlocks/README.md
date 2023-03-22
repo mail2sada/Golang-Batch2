@@ -14,16 +14,11 @@
     Data Types | Basic | Aggregate | Reference | Interface | 
     --- | --- | --- | --- |--- |
     1 | Numbers | Array | Silice | interface | 
-    --- | --- | --- | --- |--- |
-    1 | Numbers | Array | Silice | integer | 
-    --- | --- | --- | --- |--- |
-    1 | Numbers | Array | Silice | integer | 
-    --- | --- | --- | --- |--- |
-    1 | Numbers | Array | Silice | integer | 
-    --- | --- | --- | --- |--- |
-    1 | Numbers | Array | Silice | integer | 
-    --- | --- | --- | --- |--- |
-    1 | Numbers | Array | Silice | integer | 
+    1 | Numbers | Array | Silice | interface | 
+    1 | Numbers | Array | Silice | interface | 
+    1 | Numbers | Array | Silice | interface | 
+    1 | Numbers | Array | Silice | interface | 
+    1 | Numbers | Array | Silice | interface | 
 
     1. Basic types
         1. Numbers
