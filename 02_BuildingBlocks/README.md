@@ -231,6 +231,47 @@
     https://github.com/mail2sada/Golang-Batch2/blob/main/02_BuildingBlocks/02_Constant/constant.go
 
 4. ## Rune in Golang
+
+    In the past, we only had one character set, and that was known as ASCII (American Standard Code for Information Interchange). There, we used 7 bits to represent 128 characters, including upper and lowercase English letters, digits, and a variety of punctuations and device-control characters. Due to this character limitation, the majority of the population is not able to use their custom writing systems. To solve this problem, Unicode was invented. Unicode is a superset of ASCII that contains all the characters present in today’s world writing system. It includes accents, diacritical marks, control codes like tab and carriage return, and assigns each character a standard number called “Unicode Code Point”, or in Go language, a “Rune”. The Rune type is an alias of int32. Important Points:
+
+    Always remember, a string is a sequence of bytes and not of a Rune. A string may contain Unicode text encoded in UTF-8. But, the Go source code encodes as UTF-8, therefore, no need to encode the string in UTF-8.
+
+    UTF-8 encodes all the Unicode in the range of 1 to 4 bytes, where 1 byte is used for ASCII and the rest for the Rune.
+    ASCII contains a total of 256 elements and out of which, 128 are characters and 0-127 are identified as code points. Here, code point refers to the element which represents a single value.
+
+    1. Rune Literal
+        It represents a Rune constant, where an integer value recognizes a Unicode code point. In Go language, a Rune Literal is expressed as one or more characters enclosed in single quotes like ‘g’, ‘\t’, etc. In between single quotes, you are allowed to place any character except a newline and an unescaped single quote. Here, these single-quoted characters themselves represent the Unicode value of the given character and multi-character sequences with a backslash (at the beginning of the multi-character sequence) encode values in a different format. In Rune Literals, all the sequences that start with a backslash are illegal, only the following single-character escapes represent special values when you use them with a backslash: 
+
+
+\a	U+0007	Alert or Bell
+\b	U+0008	backspace
+\f	U+000C	form feed
+\n	U+000A	line feed or newline
+\r	U+000D	carriage return
+\t	U+0009	horizontal tab
+\v	U+000b	vertical tab
+\\	U+005c	backslash
+\’	U+0027	single-quote
+\”	U+0022	double quote(legal only in string literals)
+
+
+    Character | Unicode | Description |
+    --- | --- | --- |
+    \a	| U+0007	| Alert or Bell | 
+    \b	| U+0008	| backspace | 
+    \f	| U+000C	| form feed | 
+    \n	| U+000A	| line feed or newline | 
+    \r	| U+000D	| carriage return | 
+    \t	| U+0009	| horizontal tab | 
+    \v	| U+000b	| vertical tab | 
+    \\	| U+005c	| backslash | 
+    \’	| U+0027	| single-quote | 
+    \”	| U+0022	| double quote(legal only in string literals) | 
+    
+
+
+
+
 5. ## Operators in Golang
 6. ## Scope of Variables
 7. ## Type Casting
