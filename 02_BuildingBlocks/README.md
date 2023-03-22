@@ -31,6 +31,14 @@
     int32 | 32-bit signed integer |
     int64 | 64-bit signed integer | 
     uint8 | 8-bit unsigned integer| 
+    uint16 | 16-bit unsigned integer | 
+    uint32 | 32-bit unsigned integer | 
+    uint64 | 64-bit unsigned integer | 
+    int | Both int and uint contain same size, either 32 or 64 bit. | 
+    uint | Both int and uint contain same size, either 32 or 64 bit. | 
+    rune | It is a synonym of int32 and also represent Unicode code points. | 
+    byte | It is a synonym of uint8. | 
+    uintptr | It is an unsigned integer type. Its width is not defined, but its can hold all the bits of a pointer value.| 
 
 
         2. Floating Point (Franctional numbers)
@@ -41,31 +49,14 @@
 
         As show in above table basic data types are of 3 types, Numbers, Strings and Booleans,     
 
-        int8	    8-bit signed integer
-
-        int16	16-bit signed integer
-
-        int32	32-bit signed integer
-
-        int64	64-bit signed integer
-
-        uint8	8-bit unsigned integer
-
-        uint16	16-bit unsigned integer
-
-        uint32	32-bit unsigned integer
-
-        uint64	64-bit unsigned integer
-
-        int	    Both int and uint contain same size, either 32 or 64 bit.
-
-        uint	Both int and uint contain same size, either 32 or 64 bit.
-
-        rune    It is a synonym of int32 and also represent Unicode code points.
-
-        byte    It is a synonym of uint8.
-
-        uintptr	It is an unsigned integer type. Its width is not defined, but its can hold all the bits of a pointer value.
+uint16 | 16-bit unsigned integer | 
+uint32 | 32-bit unsigned integer | 
+uint64 | 64-bit unsigned integer | 
+int | Both int and uint contain same size, either 32 or 64 bit. | 
+uint | Both int and uint contain same size, either 32 or 64 bit. | 
+rune | It is a synonym of int32 and also represent Unicode code points. | 
+byte | It is a synonym of uint8. | 
+uintptr | It is an unsigned integer type. Its width is not defined, but its can hold all the bits of a pointer value.| 
 
         ###
 
