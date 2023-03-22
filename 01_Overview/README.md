@@ -100,7 +100,7 @@ The language has just entered into its version 1.21 But, has gained a huge momen
 5. ## Hello World in Golang
 
     helloworld is best introduction to any programming language, Lets see below code snippet
-    <i>
+    <i><b>
     // helloworld.go
     // Few things to note
     /*
@@ -118,7 +118,7 @@ The language has just entered into its version 1.21 But, has gained a huge momen
 	    // it can take any number of arguments and arguments can be of any type.
 	    fmt.Println("Welcome to Mavenir Go lang training")  
     }
-    </i>
+    <b></i>
 6. ## Golang code structures
 7. ## Identifiers in Golang
 8. ## Keywords in Golang
