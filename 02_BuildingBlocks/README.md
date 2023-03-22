@@ -547,9 +547,50 @@
                 fmt.Println("Average score is ", average)
             }
 
-
-            
 9. ## Short Declaration Operator(:=)
+
+    Short Variable Declaration Operator(:=) in Golang is used to create the variables having a proper name and initial value. The main purpose of using this operator to declare and initialize the local variables inside the functions and to narrowing the scope of the variables. The type of the variable is determined by the type of the expression. 
+
+        Syntax:
+            variable_name := expression/value 
+
+            package main
+
+            import (
+	            "fmt"
+	            "reflect"
+            )
+
+            func main() {
+                fmt.Println("Demo: Short declaration operator...")
+
+                a := 10
+
+                fmt.Println("Type of a is ", reflect.TypeOf(a))
+
+                fmt.Println("Value of a is ", a)
+
+                // we are declaring to variable here
+
+                x, y := 100, "Welcome to go training!!!"
+
+                fmt.Println("Type of x is ", reflect.TypeOf(x))
+                fmt.Println("value of x is ", x)
+
+                fmt.Println("Type of y is ", reflect.TypeOf(y))
+                fmt.Println("Value of y is ", y)
+
+                // previously delcared x will be initialised here..
+                x, z := 100, 5.5
+
+                fmt.Println("Type of z is ", reflect.TypeOf(z))
+
+                fmt.Println("Value of z is ", z)
+
+            }
+
+    Using short delcaration operator we can not define global variables, It can be used to define local variable inside a function and block (if, for, switch, select, etc) 
+
 10. ## var keyword vs short declaration operator
 11. ## Decision Making Statements
 12. ## Loops in Golang
