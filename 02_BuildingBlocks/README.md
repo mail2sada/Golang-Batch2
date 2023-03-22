@@ -11,9 +11,19 @@
 
     Let's explore  one by one...
 
-    Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
-    --- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
-    Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269   
+    Data Types | Basic | Aggregate | Reference | Interface | 
+    --- | --- | --- | --- |--- |
+    1 | Numbers | Array | Silice | interface | 
+    --- | --- | --- | --- |--- |
+    1 | Numbers | Array | Silice | integer | 
+    --- | --- | --- | --- |--- |
+    1 | Numbers | Array | Silice | integer | 
+    --- | --- | --- | --- |--- |
+    1 | Numbers | Array | Silice | integer | 
+    --- | --- | --- | --- |--- |
+    1 | Numbers | Array | Silice | integer | 
+    --- | --- | --- | --- |--- |
+    1 | Numbers | Array | Silice | integer | 
 
     1. Basic types
         1. Numbers
