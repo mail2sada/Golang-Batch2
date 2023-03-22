@@ -124,7 +124,7 @@
 
             }
 
-            https://github.com/mail2sada/Golang-Batch2/blob/main/02_BuildingBlocks/01_Variables/var.go
+    https://github.com/mail2sada/Golang-Batch2/blob/main/02_BuildingBlocks/01_Variables/var.go
 
     1. Declaring multiple variables.
 
@@ -182,7 +182,7 @@
 
             }       
 
-            https://github.com/mail2sada/Golang-Batch2/blob/main/02_BuildingBlocks/01_Variables/02_var.go
+    https://github.com/mail2sada/Golang-Batch2/blob/main/02_BuildingBlocks/01_Variables/02_var.go
 
 
 
