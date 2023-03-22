@@ -108,21 +108,21 @@ The language has just entered into its version 1.21 But, has gained a huge momen
     every go file belongs to a package
     */
 
-    package main // this file belongs to main package.
+        package main // this file belongs to main package.
 
-    import "fmt" // fmt package is imported, so that it functionalities can be used
+        import "fmt" // fmt package is imported, so that it functionalities can be used
 
-    // func is keyword, main is name of the function, () it is not taking any arguments
+        // func is keyword, main is name of the function, () it is not taking any arguments
 
-    func main() {
+        func main() {
 
-	    //fmt package has a function with the name Println
+	        //fmt package has a function with the name Println
 
-	    // it can take any number of arguments and arguments can be of any type.
+	        // it can take any number of arguments and arguments can be of any type.
 
-	    fmt.Println("Welcome to Mavenir Go lang training")  
-        
-    }
+	        fmt.Println("Welcome to Mavenir Go lang training")  
+
+        }
     <b></i>
 6. ## Golang code structures
 7. ## Identifiers in Golang
