@@ -158,6 +158,8 @@
 4. Channel in Golang, 
     1. Unbuffered channel
     2. Buffer channel 
+    3. Channel direction    
+    4. Channel Ownership
 5. Unidirectional Channel in Golang, 
 6. Synchronization in Golang
     1. Sync package overview

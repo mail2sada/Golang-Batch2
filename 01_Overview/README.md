@@ -191,8 +191,8 @@ The language has just entered into its version 1.21 But, has gained a huge momen
 
     Identifier which is allowed to access it from another package is known as the exported identifier. The exported identifiers are those identifiers which obey the following conditions:
 
-        The first character of the exported identifier’s name should be in the Unicode upper case letter.
-        
+        The first character of the exported identifier’s name should be in the upper case letter.
+
         The identifier should be declared in the package block, or it is a variable name, or it is a method name.
 
     The uniqueness of the identifiers means the identifier is unique from the other set of the identifiers available in your program, or in the package and they are not exported.
@@ -200,4 +200,23 @@ The language has just entered into its version 1.21 But, has gained a huge momen
 
 
 8. ## Keywords in Golang
+
+    Keywords or Reserved words are the words in a language that are used for internal process or represent some predefined actions. These words are  not allowed to be used as an identifier.
+
+    Let's see below code snippet.
+
+        /*
+            Below are the list of keywords
+            package, import func
+        */
+        package main // package is a keyword
+
+        import "fmt" // import is keyword
+
+        func main() { // func is a keyword
+
+	        fmt.Println("Hello Mavenir team")
+        }
+    
+     
 
