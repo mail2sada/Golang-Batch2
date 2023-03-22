@@ -11,6 +11,10 @@
 
     Let's explore  one by one...
 
+    Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
+    --- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+    Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269   
+
     1. Basic types
         1. Numbers
            Go language supports integers, floating point numbers and complex numbers
@@ -45,7 +49,10 @@
         uintptr	It is an unsigned integer type. Its width is not defined, but its can hold all the bits of a pointer value.
          </i></b>
 
+        ###
+
         2. strings
+
         3. booleans
 
 
