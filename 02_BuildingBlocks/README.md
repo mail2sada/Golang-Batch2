@@ -124,7 +124,7 @@
 
             }
 
-    https://github.com/mail2sada/Golang-Batch2/blob/main/02_BuildingBlocks/01_Variables/var.go
+    https://github.com/mail2sada/Golang-Batch2/blob/main/02_BuildingBlocks/01_Variables/01_var.go
 
     1. Declaring multiple variables.
 
@@ -184,14 +184,57 @@
 
     https://github.com/mail2sada/Golang-Batch2/blob/main/02_BuildingBlocks/01_Variables/02_var.go
 
-
-
 3. ## Constants
+    As the topic suggest constant means a identifier whose value is not goiing to change.
+
+            Syntax:
+
+                const const_name type = expression
+                Example:
+                const pi float64 = 3.14159
+            Syntax:
+                const const1, const2, const3 type = expr1, expr2, expr
+                Exmaple:
+                const second, minute, hour = 1, 1*60, 1 * 60 * 60
+             Syntax:
+                const cnst1, cnst2, cnst3 = exp1, exp2, exp3
+                Example:
+                const pi, second, greeting = 3.14159, 1000, "Wecome to all!!!"
+
+            Example:
+                package main
+
+                import "fmt"
+
+                func main() {
+
+	                fmt.Println("Demo: Constant declaration")
+
+	                const pi float64 = 3.14159
+
+	                fmt.Printf("Type of pi is %T", pi)
+
+	                const milliSecond = 1
+	                const second = 1000 * milliSecond
+	                const minute = 60 * second
+	                const hour = 60 * minute
+
+	                const greeting = "Welcome to go training..."
+
+	                fmt.Println("Value of milliSecond:", milliSecond)
+	                fmt.Println("Value of second:", second)
+	                fmt.Println("Value of minute:", minute)
+	                fmt.Println("Value of hour:", hour)
+	
+	                fmt.Println(greeting)
+                }
+
+
+
 4. ## Rune in Golang
 5. ## Operators in Golang
 6. ## Scope of Variables
 7. ## Type Casting
-8. ## var Keyword in Golang
 9. ## Short Declaration Operator(:=)
 10. ## var keyword vs short declaration operator
 11. ## Decision Making Statements

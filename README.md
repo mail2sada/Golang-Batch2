@@ -17,7 +17,6 @@
 5. Operators in Golang
 6. Scope of Variables
 7. Type Casting
-8. var Keyword in Golang
 9. Short Declaration Operator(:=)
 10. var keyword vs short declaration operator
 11. Decision Making Statements
