@@ -591,8 +591,10 @@
 
     Using short delcaration operator we can not define global variables, It can be used to define local variable inside a function and block (if, for, switch, select, etc) 
 
-10. ## var keyword vs short declaration operator
 11. ## Decision Making Statements
+![alt text](https://github.com/mail2sada/Golang-Batch2/blob/main/zzzsupport/Screenshot%202023-03-22%20at%2011.03.55%20PM.png)
+
+
 12. ## Loops in Golang
 13. ## Loop Control Statements
 14. ## Switch Statement in Go
