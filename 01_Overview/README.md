@@ -14,14 +14,16 @@ The language has just entered into its version 1.21 But, has gained a huge momen
 1. ## Go Features
     1. #### Open-Source
     The foremost characteristic of Golang programming language is that it is open-source. That means, anyone can download and experiment with the code to bring better codes into picture and fix related bugs.
+
     2. #### Static Typing
     Go is a statically typed programming language and works with a mechanism that makes it possible to compile code accurately while taking care of type conversions and compatibility level. This gives developers freedom from challenges associated with dynamically typed languages.
-    3. #### Concurrency Support
-    One of the prime characteristics of go programming language is its concurrency support.
 
-    Golang, unlike other programming languages, offers easier and trackable concurrency options. This makes it easier for app developers to complete requests at a faster pace, free up allocated resources and network earlier, and much more.
+    3. #### Concurrency Support
+    One of the prime characteristics of go programming language is its concurrency support. Golang, unlike other programming languages, offers easier and trackable concurrency options. This makes it easier for app developers to complete requests at a faster pace, free up allocated resources and network earlier, and much more.
+
     4. #### Powerful Standard Library
     This programming language also comes loaded with a robust standard library. This libraries offer ample components that gives developers an escape from turning towards third party packages anymore.
+    
     5. #### Powerful tool set
         1. Gofmt: It automatically formats your Go code, which eventually brings a major impact on readability.
         2. Gorun: This tool is used to add a ‘bang line’ in the source code to run it, or run a similar sode code file explicitly. It is often used by Go developers when experimenting with codes written in Python.
