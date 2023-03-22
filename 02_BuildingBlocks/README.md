@@ -448,6 +448,63 @@
     3. <-:The name of this operator is receive. It is used to receive a value from the channel.
 
 6. ## Scope of Variables
+    The Scope of a variable can be defined as a part of the program where a particular variable is accessible. A variable can be defined inside a package, function, method, loop, etc. In Golang all identifiers are lexically (or statically) scoped, i.e. scope of a variable can be determined at compile time. Or you can say a variable can only be called from within the block of code in which it is defined.
+
+    Golang scope rules of variables can be divided into two categories which depend on where the variables are declared:
+
+    1. Local Variables(Declared Inside a block or a function)
+    2. Global Variables(Declared outside a block or a function)
+
+    ### Local Variables
+    1. Variables that are declared inside a function or a block are termed as Local variables. These are not accessible outside the function or block.
+    2. These variables can also be declared inside the for, while statement etc. inside a function.
+    3. However, these variables can be accessed by the nested code blocks inside a function.
+    4. These variables are also termed as the block variables.
+    5. There will be a compile-time error if these variables are declared twice with the same name in the same scope.
+    6. These variables don’t exist after the function’s execution is over.
+    7. The variable which is declared outside the loop is also accessible within the nested loops. It means a global variable will be accessible to the methods and all loops. The local variable will be accessible to loop and function inside that function.    
+    8. A variable which is declared inside a loop body will not be visible to the outside of loop body.
+
+    ### Global Variables
+    1. The variables which are defined outside of a function or a block is termed as Global variables.
+    2. These are available throughout the lifetime of a program.
+    3. These are declared at the top of the program outside all of the functions or blocks.
+    4. These can be accessed from any portion of the program.
+
+    Example:
+
+        package main
+
+        import "fmt"
+
+    // this variable is accessible through out main package.
+    // this is not exported variable hence it can not be accessed outside package
+    // more explaination can be found in Modules and Packages Section
+    var global int = 100
+
+    func main() {
+
+	    fmt.Println("Demo scope of variable")
+
+	    fmt.Println("Value of global variable is ", global)
+	    var localToMain = 500
+	    {
+		    fmt.Println("Value of localToMain is ", localToMain)
+		    fmt.Println("Value of the global int is accessible inside block", global)
+
+		    var localToBlock = 1000
+
+		    fmt.Println("localToBlocl variable is accesible only insid this block ", localToBlock)
+
+	    }
+
+	    fmt.Println("localToMain and gloabl are accessible here ", localToMain, global)
+
+	    fmt.Println("Scope of localToBlock is limited only to scope any attempt to access this here will result in compiler error")
+
+	    
+    }
+
 7. ## Type Casting
 9. ## Short Declaration Operator(:=)
 10. ## var keyword vs short declaration operator
