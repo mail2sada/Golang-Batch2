@@ -64,7 +64,7 @@ The language has just entered into its version 1.21 But, has gained a huge momen
 
     4. #### No Specific Niche
     Designed by Google with the motive to deliver endless support and solutions, the language has characteristics that goes well with all. However, the language has still not found a single niche to conquer. While it is facing competition from JavaScript in frontend development world, it is lagging behind Python in the world of data visualization and analysis. Because of this, many developers are still hesitating from investing in this language for a particular purpose.
-    
+
     5. #### Poor Error Handling
     In the case of Go language, a function is required to return error if any error is expected. Developers have to write a huge number of ‘if’ blocks to perform error handling process efficiently and effectively. Something that is one of the golang coding challenges when they have lost track to the error that can further result in missing out of some imperative error handling logic.
 
@@ -73,12 +73,16 @@ The language has just entered into its version 1.21 But, has gained a huge momen
 
     1. #### Web development: 
     Go has a built-in package for creating HTTP servers and clients, making it a good choice for building web applications and microservices.
+
     2. #### Networking: 
     Go has strong support for concurrent programming and networking, making it a good choice for building networked systems and servers.
+
     3. #### Distributed systems: 
     Go's simplicity and efficiency make it well-suited for building distributed systems that need to handle a large number of concurrent connections.
+
     4. #### Data processing: 
     Go's support for concurrency and parallelism makes it well-suited for data processing tasks that can be parallelized.
+    
     5. #### System programming: 
     Go can be used to build low-level systems programs, such as operating system kernels and device drivers.
 
