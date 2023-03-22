@@ -171,4 +171,23 @@ The language has just entered into its version 1.21 But, has gained a huge momen
     3. Identifier is case sensitive.
     4. Keywords are not allowed to use as an identifier name.
     5. There is no limit on the length of the name of the identifier, but it is advisable to use an optimum length of 4 – 15 letters only.
+
+    Go has predefined identifiers for constants, types, and functions. These names are not reserved, it is allowed to use them in the declaration. Following is the list of predeclared identifiers:
+
+            For Constants:
+            true, false, iota, nil
+
+            For Types:
+            int, int8, int16, int32, int64, uint,
+            uint8, uint16, uint32, uint64, uintptr,
+            float32, float64, complex128, complex64,
+            bool, byte, rune, string, error
+
+            For Functions:
+            make, len, cap, new, append, copy, close, 
+            delete, complex, real, imag, panic, recover
+
+
+
 8. ## Keywords in Golang
+
