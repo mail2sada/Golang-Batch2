@@ -71,12 +71,22 @@
 
     var keyword is used to specify a variable.
 
-            Syntax:
+            Syntax 1:
             var variable_name type = expression
 
             Example:
             var firstInteger int = 10
             var unisignedInt uint = 20
+
+            Syntax 2:
+
+            var variable_name = expression
+            type is identified by the compiler at the compile time
+            // here myString type will be evaliated string
+            var myString = "This is my new string"
+            // integer type will be int
+            var integar = 100
+
 3. ## Constants
 4. ## Rune in Golang
 5. ## Operators in Golang
