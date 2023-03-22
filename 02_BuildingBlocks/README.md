@@ -376,9 +376,76 @@
 
         }
 
+    ### Logical Operators
+
+    Logical operators are used to combine two or more conditions/constraints or to complement the evaluation of the original condition in consideration.  
+    1. Logical AND: The ‘&&’ operator returns true when both the conditions in consideration are satisfied. Otherwise it returns false. For example, a && b returns true when both a and b are true (i.e. non-zero).
+    2. Logical OR: The ‘||’ operator returns true when one (or both) of the conditions in consideration is satisfied. Otherwise it returns false. For example, a || b returns true if one of a or b is true (i.e. non-zero). Of course, it returns true when both a and b are true.
+    3. Logical NOT: The ‘!’ operator returns true the condition in consideration is not satisfied. Otherwise it returns false. For example, !a returns true if a is false, i.e. when a=0.
+
+        package main
+
+        import "fmt"
+
+        func main() {
+
+	        fmt.Println("Demo logical operators")
+
+	        var a = 100
+
+	        var b = 100
+
+	        var c = 200
+
+	        fmt.Println("Value of a is ", a, "\n Value of b is ", b, "\nValue of c is ", c)
+
+	        var result = (a == b) && (a == c)
+
+	        // here first condition is true and second condition is false, and operation should result in false
+	        fmt.Println("Result of (a == b) && (a == c) ", result)
+
+	        result = (a == b) || (a == c)
+
+	        // here first condition is true and second condition is false, or operation should result in true
+	        fmt.Println("Result of (a == b) || (a == c) ", result)
+
+	        result = !((a == b) && (a == c))
+
+	        // here first condition is true and second condition is false, and operation should result in false, however a not operation on whole expresion should result in true
+	        fmt.Println("Result of !((a == b) && (a == c)) ", result)
+        }
 
 
+    ### Bitwise Operators
+    Go Supports 6 bitwise operators, which work at bit level or used to perform bit by bit operations. below are the bitwise operators 
 
+    1. & (bitwise AND): Takes two numbers as operands and does AND on every bit of two numbers. The result of AND is 1 only if both bits are 1.
+    2. | (bitwise OR): Takes two numbers as operands and does OR on every bit of two numbers. The result of OR is 1 any of the two bits is 1.
+    3. ^ (bitwise XOR): Takes two numbers as operands and does XOR on every bit of two numbers. The result of XOR is 1 if the two bits are different.
+    4. << (left shift): Takes two numbers, left shifts the bits of the first operand, the second operand decides the number of places to shift.
+    5. >> (right shift): Takes two numbers, right shifts the bits of the first operand, the second operand decides the number of places to shift.
+    6. &^ (AND NOT): This is a bit clear operator.
+
+    ### Assignment Operators
+    Assignment operators are used to assigning a value to a variable. The left side operand of the assignment operator is a variable and right side operand of the assignment operator is a value. The value on the right side must be of the same data-type of the variable on the left side otherwise the compiler will raise an error. Different types of assignment operators are shown below:
+
+    1. “=”(Simple Assignment): This is the simplest assignment operator. This operator is used to assign the value on the right to the variable on the left.
+    2. “+=”(Add Assignment): This operator is a combination of ‘+’ and ‘=’ operators. This operator first adds the current value of the variable on left to the value on the right and then assigns the result to the variable on the left.
+    3. “-=”(Subtract Assignment): This operator is a combination of ‘-‘ and ‘=’ operators. This operator first subtracts the current value of the variable on left from the value on the right and then assigns the result to the variable on the left.
+    4. “*=”(Multiply Assignment): This operator is a combination of ‘*’ and ‘=’ operators. This operator first multiplies the current value of the variable on left to the value on the right and then assigns the result to the variable on the left.
+    4. “/=”(Division Assignment): This operator is a combination of ‘/’ and ‘=’ operators. This operator first divides the current value of the variable on left by the value on the right and then assigns the result to the variable on the left.
+    6. “%=”(Modulus Assignment): This operator is a combination of ‘%’ and ‘=’ operators. This operator first modulo the current value of the variable on left by the value on the right and then assigns the result to the variable on the left.
+    7. “&=”(Bitwise AND Assignment): This operator is a combination of ‘&’ and ‘=’ operators. This operator first “Bitwise AND” the current value of the variable on the left by the value on the right and then assigns the result to the variable on the left.
+    8. “^=”(Bitwise Exclusive OR): This operator is a combination of ‘^’ and ‘=’ operators. This operator first “Bitwise Exclusive OR” the current value of the variable on left by the value on the right and then assigns the result to the variable on the left.
+    9. “|=”(Bitwise Inclusive OR): This operator is a combination of ‘|’ and ‘=’ operators. This operator first “Bitwise Inclusive OR” the current value of the variable on left by the value on the right and then assigns the result to the variable on the left.
+    10. “<<=”(Left shift AND assignment operator): This operator is a combination of ‘<<’ and ‘=’ operators. This operator first “Left shift AND” the current value of the variable on left by the value on the right and then assigns the result to the variable on the left.
+    11. “>>=”(Right shift AND assignment operator): This operator is a combination of ‘>>’ and ‘=’ operators. This operator first “Right shift AND” the current value of the variable on left by the value on the right and then assigns the result to the variable on the left.
+
+    ### Misc Operators
+    Below are the list of Misc operators, we will discuss this operators in Pointer and Channel topics.
+    1. &: This operator returns the address of the variable.
+    2. *: This operator provides pointer to a variable.
+    3. <-:The name of this operator is receive. It is used to receive a value from the channel.
 
 6. ## Scope of Variables
 7. ## Type Casting
