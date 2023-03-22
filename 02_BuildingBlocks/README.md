@@ -2,11 +2,8 @@
 1. ## Data Types
     Data types specify the type of data that a valid Go variable or constant can hold. In Go language, the types are divided into four categories as follows: 
     1. Basic type: 
-       Numbers, strings, and booleans come under this category.
     2. Aggregate type: 
-       Array and structs come under this category.
     3. Reference type: 
-       Pointers, slices, maps, functions, and channels come under this category.
     4. Interface type  
 
     Let's explore  one by one...
@@ -20,12 +17,16 @@
     5 |         |         | channels |  | 
     
 
-    1. Basic types
-        1. Numbers
-           Go language supports integers, floating point numbers and complex numbers
+    1. Basic Data types.
+        As show in above table basic data types are of 3 types, Numbers, Strings and Booleans, 
 
-           ### Intgers types:
-           <i><b>
+ Data Types| Numbers | strings | booleans |
+    ---    | ---     | ---     | ---      |
+    1      | Integers| Strings   | Boolean |
+    2      | Floating point Numbers        |  |    |
+    3      | Complex Numbers        |         |      | 
+
+    
 
         int8	    8-bit signed integer
 
