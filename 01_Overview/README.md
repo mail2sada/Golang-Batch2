@@ -82,11 +82,21 @@ The language has just entered into its version 1.21 But, has gained a huge momen
 
     4. #### Data processing: 
     Go's support for concurrency and parallelism makes it well-suited for data processing tasks that can be parallelized.
-    
+
     5. #### System programming: 
     Go can be used to build low-level systems programs, such as operating system kernels and device drivers.
 
 4. ## Installation (Windows & Mac)
+    Go has 2 components, go compiler and editor.
+    Go compiler can be downloaded from the official site. (https://go.dev/doc/install)
+
+    We can use any of the editors Visual Studio Code, Notepad, etc. Visal Studio Code comes with lot of extensions and it is easy to use.
+    https://code.visualstudio.com/docs/setup/mac
+
+    On successful installation of visual studio code, need to install go extension for visual studio code this will enable auto complete, auto format, etc.
+
+    VSCode extension: Rich Go language support for Visual Studio Code
+
 5. ## Hello World in Golang
 6. ## Golang code structures
 7. ## Identifiers in Golang
