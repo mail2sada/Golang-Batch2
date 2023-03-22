@@ -591,8 +591,26 @@
 
     Using short delcaration operator we can not define global variables, It can be used to define local variable inside a function and block (if, for, switch, select, etc) 
 
-11. ## Decision Making Statements
-![alt text](https://github.com/mail2sada/Golang-Batch2/blob/main/zzzsupport/Screenshot%202023-03-22%20at%2011.03.55%20PM.png)
+11. ## Decision Making Statements 
+
+    Go supports decision making  statements of below type.
+
+    1. if, 
+    2. if-else, 
+    3. Nested-if, 
+    4. if-else-if
+
+    ### if 
+
+    This is the most simple decision-making statement. It is used to decide whether a certain statement or block of statements will be executed or not i.e if a certain condition is true then a block of statement is executed otherwise not.
+
+        syntax:
+            if condition {
+                // Statements to execute if
+                // condition is true
+            }
+            
+        ![alt text](https://github.com/mail2sada/Golang-Batch2/blob/main/zzzsupport/Screenshot%202023-03-22%20at%2011.03.55%20PM.png)
 
 
 12. ## Loops in Golang
