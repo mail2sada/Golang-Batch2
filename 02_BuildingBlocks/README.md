@@ -182,6 +182,8 @@
 
             }       
 
+            https://github.com/mail2sada/Golang-Batch2/blob/main/02_BuildingBlocks/01_Variables/02_var.go
+
 
 
 3. ## Constants
