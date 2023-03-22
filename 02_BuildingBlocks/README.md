@@ -41,13 +41,20 @@
     uintptr | It is an unsigned integer type. Its width is not defined, but its can hold all the bits of a pointer value.| 
 
         2. Floating Point (Franctional numbers)
+        Go supports 32 and 64 bit floats
+
     Data Type| 	Description | 
      --- | --- | 
     float32|	32-bit IEEE 754 floating-point number|
     float64|	64-bit IEEE 754 floating-point number|
 
-    
+
         3. Complex Numbers
+        Go has support for 64 and 128 bit complex numbers.
+    Data Type| 	Description | 
+     --- | --- |     
+    complex64|	Complex numbers which contain float32 as a real and imaginary component.|
+    complex128| Complex numbers which contain float64 as a real and imaginary component.|
 
         ###
 
