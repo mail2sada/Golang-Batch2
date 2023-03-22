@@ -144,6 +144,31 @@ The language has just entered into its version 1.21 But, has gained a huge momen
     
     fmt.Println is a function defined in fmt package this will print the specified data. Here wre are printing "Welcome to Mavenir Go lang training" 
 
-6. ## Golang code structures
 7. ## Identifiers in Golang
+    Identifiers are the user-defined name of the program components. In Go language, an identifier can be a variable name, function name, constant, statement labels, package name, or types.
+
+            package main
+
+            import "fmt"
+
+            func main() {
+
+                var greet = "Hello Mavenir"
+  
+            }
+
+    There are 3 identifiers in this code.
+
+    1. main: package name
+    2. main: function name
+    3. greet: variable name.
+
+    ### Rules to define identifiers
+    Below are the valid identifier names.
+    
+    1. identifier must begin with a letter or an underscore(_). And the names may contain the letters ‘a-z’ or ’A-Z’ or digits 0-9 as well as the character ‘_’.
+    2. The name of the identifier should not start with a digit.
+    3. The name of the identifier is case sensitive.
+    4. Keywords is not allowed to use as an identifier name.
+    5. There is no limit on the length of the name of the identifier, but it is advisable to use an optimum length of 4 – 15 letters only.
 8. ## Keywords in Golang
