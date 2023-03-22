@@ -128,6 +128,7 @@ The language has just entered into its version 1.21 But, has gained a huge momen
 
     Lets analyze source code
     keyword:
+    
             package main
 
 6. ## Golang code structures
