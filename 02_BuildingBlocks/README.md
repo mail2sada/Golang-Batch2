@@ -56,14 +56,27 @@
     complex64|	Complex numbers which contain float32 as a real and imaginary component.|
     complex128| Complex numbers which contain float64 as a real and imaginary component.|
 
-        ###
+    ###
 
-        2. strings
+    2. strings
+    The string data type represents a sequence of Unicode code points. Or in other words, we can say a string is a sequence of immutable bytes, means once a string is created you cannot change that string. A string may contain arbitrary data, including bytes with zero value in the human-readable form.
 
-        3. booleans
+    3. booleans
+    The boolean data type represents only one bit of information either true or false. The values of type boolean are not converted implicitly or explicitly to any other type. 
 
+    Aggregate, Reference, Interface types will be discussed in further section
 
 2. ## Variables
+    A typical program uses various values that may change during its execution. variable can store temporarily in the Random Access Memory of the computer and these values in this part of memory vary throughout the execution and hence another term for this came which is known as Variables. So basically, a Variable is a placeholder of the information which can be changed at runtime. And variables allow to Retrieve and Manipulate the stored information.
+
+    var keyword is used to specify a variable.
+
+            Syntax:
+            var variable_name type = expression
+
+            Example:
+            var firstInteger int = 10
+            var unisignedInt uint = 20
 3. ## Constants
 4. ## Rune in Golang
 5. ## Operators in Golang
