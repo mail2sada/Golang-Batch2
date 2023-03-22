@@ -167,8 +167,8 @@ The language has just entered into its version 1.21 But, has gained a huge momen
     Below are the valid identifier names.
     
     1. identifier must begin with a letter or an underscore(_). And the names may contain the letters ‘a-z’ or ’A-Z’ or digits 0-9 as well as the character ‘_’.
-    2. The name of the identifier should not start with a digit.
-    3. The name of the identifier is case sensitive.
-    4. Keywords is not allowed to use as an identifier name.
+    2. Identifier should not start with a digit.
+    3. Identifier is case sensitive.
+    4. Keywords are not allowed to use as an identifier name.
     5. There is no limit on the length of the name of the identifier, but it is advisable to use an optimum length of 4 – 15 letters only.
 8. ## Keywords in Golang
