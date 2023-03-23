@@ -28,5 +28,4 @@ func main() {
 
 	// here first condition is true and second condition is false, and operation should result in false, however a not operation on whole expresion should result in true
 	fmt.Println("Result of !((a == b) && (a == c)) ", result)
-
 }

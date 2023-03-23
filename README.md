@@ -18,7 +18,6 @@
 6. Scope of Variables
 7. Type Conversion
 9. Short Declaration Operator(:=)
-10. var keyword vs short declaration operator
 11. Decision Making Statements
 12. Loops in Golang
 13. Loop Control Statements

@@ -21,6 +21,6 @@ func main() {
 	fmt.Println("Value of second:", second)
 	fmt.Println("Value of minute:", minute)
 	fmt.Println("Value of hour:", hour)
-
+	
 	fmt.Println(greeting)
 }

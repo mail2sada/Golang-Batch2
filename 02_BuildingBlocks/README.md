@@ -610,9 +610,172 @@
                 // condition is true
             }
 
-    ![alt text](https://github.com/mail2sada/Golang-Batch2/blob/main/zzzsupport/Screenshot%202023-03-22%20at%2011.03.55%20PM.png)
+            package main
+
+            import "fmt"
+
+            func main() {
+                fmt.Println("Demo if statement")
+
+                const (
+                    Sunday int = iota
+                    Monday
+                    Tuesday
+                    Wednsday
+                    Thursday
+                    Friday
+                    Saturday
+                )
+
+                weekDay := Monday
+
+                if weekDay == Sunday {
+                    fmt.Println("Sunday")
+                }
+
+                if weekDay == Monday {
+                    fmt.Println("Monday")
+                }
+
+                if weekDay == Tuesday {
+                    fmt.Println("Tuesday")
+                }
+
+                if weekDay == Wednsday {
+                    fmt.Println("Wednsday")
+                }
+
+                if weekDay == Thursday {
+                    fmt.Println("Thursday")
+                }
+
+                if weekDay == Friday {
+                    fmt.Println("Friday")
+                }
+
+                if weekDay == Saturday {
+                    fmt.Println("Saturday")
+                }
+            }
+
+
+    ### if-else 
+
+    if-else decision making allows you to execute a block if condition satisfies and execute other block if condition does not satisify.
+
+        syntax:
+            if condition {
+                // Statements to executed, when condition satisfies
+            }else {
+                // statements to execute, when condition doesn;t satisfy 
+            }
+
+            package main
+
+            import "fmt"
+
+            func main() {
+
+                fmt.Println("Demo: if-else")
+
+                myInt := 100
+
+                testInt := 50
+
+                if myInt > testInt {
+                    fmt.Println("myInt is greater than testInt")
+                } else {
+                    fmt.Println("myInt is not greater than testInt")
+                }
+
+                if myInt < testInt {
+                    fmt.Println("myInt is less than testInt")
+                } else {
+                    fmt.Println("myInt is not less than testInt")
+                }
+            }
+    ### nested if
+
+    In Go Language, a nested if is an if statement that is the target of another if or else. Nested if statements mean an if statement inside an if statement. Golang allows us to nest if statements within if statements. i.e, we can place an if statement inside another if statement.
+
+            if condition1 {
+
+                // Executes when condition1 is true
+                
+                if condition2 {
+
+                    // Executes when condition2 is true
+                }
+             } else {
+
+                // Executes when condition1 is false
+
+                if condition3 {
+                    // executes when condition3 is  true
+                } else {
+                    // executes when condition3 is false
+                }
+             }
+
+    ### if-else-if
+    Here, a user can decide among multiple options. The if statements are executed from the top down. As soon as one of the conditions controlling the if is true, the statement associated with that is executed, and the rest of the ladder is bypassed. If none of the conditions is true, then the final else statement will be executed.
+    Important Points:
+ 
+    if statement can have zero or one else’s and it must come after any else if’s.
+    if statement can have zero to many else if’s and it must come before the else.
+    None of the remaining else if’s or else’s will be tested if an else if succeeds,
+
+            package main
+
+            import "fmt"
+
+            func main() {
+                fmt.Println("Demo: if else if")
+
+                const (
+                    Sunday int = iota
+                    Monday
+                    Tuesday
+                    Wednsday
+                    Thursday
+                    Friday
+                    Saturday
+                )
+
+                weekday := Friday
+
+                if weekday == Sunday {
+                    fmt.Println("Weekday is Sunday")
+                } else if weekday == Monday {
+                    fmt.Println("Weekday is Monday")
+                } else if weekday == Tuesday {
+                    fmt.Println("Weekday is Tuesday")
+
+                } else if weekday == Wednsday {
+                    fmt.Println("Weekday is Wednsday")
+
+                } else if weekday == Thursday {
+                    fmt.Println("Weekday is Thursday")
+
+                } else if weekday == Friday {
+                    fmt.Println("Weekday is Friday")
+
+                } else if weekday == Saturday {
+                    fmt.Println("Weekday is Saturday")
+                }
+            }
 
 
 12. ## Loops in Golang
+    Go supports only for loop and in multiple forms, go supports C/C++ kind of for loop with initialization;condition;increament, for with only condition, infinete loop and range loops.
+
+    We will see eaxh of the loops one by one
+
+            syntax: C/C++ stype
+                for <initialization/declaration>; condition; increment {
+                    // loop statements...
+                }
+
+            
 13. ## Loop Control Statements
 14. ## Switch Statement in Go
