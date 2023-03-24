@@ -934,5 +934,36 @@
                     fmt.Println("Value of i:", i)
                 }
             }
+    ### goto
+        goto is control statement that I personally don't use and don't recommend to use. It moves the control to the defined goto label.
+
+            package main
+
+            import "fmt"
+
+            func main() {
+                fmt.Println("Demo: loop control statement goto")
+
+            Label2:
+                fmt.Println("Hello...")
+                x := 0
+
+            Label1:
+                fmt.Println("Starting loop")
+                for x < 10 {
+                    x++
+                    fmt.Println("Value of x:", x)
+                    if x > 5 {
+                        fmt.Println("Going to label 1")
+                        goto Label1
+                    }
+
+                    if x > 8 {
+                        fmt.Println("Goining to label2")
+                        goto Label2
+                    }
+
+                }
+            }
 
 14. ## Switch Statement in Go
