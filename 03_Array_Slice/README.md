@@ -130,7 +130,52 @@
         Syntax:
             var array[size]type = [size]type{idx1:val1, idx2:val2, idx3:, val3,... size}
         
+        Example:
+
+            package main
+
+            import "fmt"
+
+            func main() {
+                fmt.Println("Demo: Initializing specific elements of array")
+
+                // we will declare an array of int with size 10 and intializing index 0, 5, 9
+
+                var integerArray = [10]int{0: 100, 5: 200, 9: 300}
+
+                fmt.Println("Contents of array are ", integerArray)
+            }
+        
     5. Initialising array with ellipses
+        While declaring array if we are sure of the number of elements it will have we can use ellipses
+        Syntax:
+
+            var array = [...]type {val1, val2, val3...}
+        
+        Example:
+            package main
+
+            import "fmt"
+
+            func main() {
+
+                fmt.Println("Demo: Declaration and initialisation with elipsis")
+
+                var arrayInt = [...]int{10, 20, 30, 40, 50}
+
+                fmt.Println("Contents of arrayInt:", arrayInt)
+
+                strArray := [...]string{"Red", "Green", "Blue"}
+
+                fmt.Println("Contents of strArray:", strArray)
+
+                strNewArray := [...]string{1: "Hello", 5: "Namaste", 10: "How are you?"}
+
+                fmt.Println("Contents of strNewArray:", strNewArray)
+            }
+
+
+
     6. len function
     6. loop through an array
 2. Copying an Array into Another Array
