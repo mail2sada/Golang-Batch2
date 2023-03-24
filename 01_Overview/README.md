@@ -9,7 +9,7 @@ Also called Golang, Go is an open-source, statically typed,  and compiled progra
     3. Object Oriented Programming (OOPs) concept of Smalltalk. (https://en.wikipedia.org/wiki/Smalltalk / https://squeak.org/)
     4. Concurrency element of Newsqueak. (https://www.wikidata.org/wiki/Q262003)
 
-The language has just entered into its version 1.21 But, has gained a huge momentum in the market – bringing it several steps ahead in Go vs Rust discussion and similar comparisons. It has entered into the list of Top 10 Programming language by IEEE Spectrum and become the fourth most active languages on GitHub.
+The language has just entered into its version 1.21 but, has gained a huge momentum in the market – bringing it several steps ahead in Go vs Rust discussion and similar comparisons. It has entered into the list of Top 10 Programming language by IEEE Spectrum and become the fourth most active languages on GitHub.
 
 1. ## Go Features
     1. #### Open-Source
@@ -19,10 +19,10 @@ The language has just entered into its version 1.21 But, has gained a huge momen
     Go is a statically typed programming language and works with a mechanism that makes it possible to compile code accurately while taking care of type conversions and compatibility level. This gives developers freedom from challenges associated with dynamically typed languages.
 
     3. #### Concurrency Support
-    One of the prime characteristics of go programming language is its concurrency support. Golang, unlike other programming languages, offers easier and trackable concurrency options. This makes it easier for app developers to complete requests at a faster pace, free up allocated resources and network earlier, and much more.
+    One of the prime characteristics of go programming language is its concurrency support. Golang, unlike other programming languages, offers easier and trackable concurrency options. This makes it easier for app developers to complete requests at a faster pace, free up allocated resources and network resources earlier, and much more.
 
     4. #### Powerful Standard Library
-    This programming language also comes loaded with a robust standard library. This libraries offer ample components that gives developers an escape from turning towards third party packages anymore.
+    This programming language also comes loaded with a robust standard library. These libraries offer ample components that gives developers an escape from turning towards third party packages anymore.
 
     5. #### Powerful tool set
         1. Gofmt: It automatically formats your Go code, which eventually brings a major impact on readability.
@@ -32,6 +32,7 @@ The language has just entered into its version 1.21 But, has gained a huge momen
 
     6. #### Testing Capabilities
     Go language also offers an opportunity to write unit tests along with writing the app codes. Besides, it avails support to understand code coverage, benchmark tests, and write example codes to create your own code documentation.
+
     7. #### Garbage Collection
     The programming language also offers exceptional power of garbage collection. Meaning, developers need not worry about freeing up pointers or the situation associated with dangling pointer. Because of these characteristics, the language has gained attention of various popular brands.
 
@@ -50,7 +51,8 @@ The language has just entered into its version 1.21 But, has gained a huge momen
     Another feature that makes Golang outshine other programming languages is that it is highly scalable in nature. It enables top android mobile app developers to handle multiple tasks at the same time, especially channels and goroutines.
 
     5. #### Time Saving
-    With features like automatic declaration of variables, latency free garbage collection, and faster compile time, it saves consideration development time; giving developers enough time to be productive.
+    With features like automatic declaration of variables, latency free garbage collection, and faster compile time, it saves considerable development time; giving developers enough time to be productive.
+
 3. ## Drawbacks
     1. #### Still Developing
     Though the popularity graph of Go programming language is growing and it holds a promising future in the market, it is still in its nascent stage. This is making it tough for the language to beat the competition with popular names like Java.
@@ -66,7 +68,7 @@ The language has just entered into its version 1.21 But, has gained a huge momen
     Designed by Google with the motive to deliver endless support and solutions, the language has characteristics that goes well with all. However, the language has still not found a single niche to conquer. While it is facing competition from JavaScript in frontend development world, it is lagging behind Python in the world of data visualization and analysis. Because of this, many developers are still hesitating from investing in this language for a particular purpose.
 
     5. #### Poor Error Handling
-    In the case of Go language, a function is required to return error if any error is expected. Developers have to write a huge number of ‘if’ blocks to perform error handling process efficiently and effectively. Something that is one of the golang coding challenges when they have lost track to the error that can further result in missing out of some imperative error handling logic.
+    In the case of Go language, a function is required to return error if any error is expected. Developers have to write a huge number of ‘if’ blocks to perform error handling process efficiently and effectively. One of the golang coding challenges is when we have lost track of the error that can further result in missing out of some imperative error handling logic.
 
 3. ## Where go is used?
     Go is used for a wide range of purposes, including:
@@ -90,7 +92,7 @@ The language has just entered into its version 1.21 But, has gained a huge momen
     Go has 2 components, go compiler and editor.
     Go compiler can be downloaded from the official site. (https://go.dev/doc/install)
 
-    We can use any of the editors Visual Studio Code, Notepad, etc. Visal Studio Code comes with lot of extensions and it is easy to use.
+    We can use any of the editors Visual Studio Code, Notepad, etc. Visual Studio Code comes with lot of extensions and it is easy to use.
     https://code.visualstudio.com/docs/setup/mac
 
     On successful installation of visual studio code, need to install go extension for visual studio code this will enable auto complete, auto format, etc.
@@ -99,7 +101,7 @@ The language has just entered into its version 1.21 But, has gained a huge momen
 
 5. ## Hello World in Golang
 
-    helloworld is best introduction to any programming language, Lets see below code snippet
+    helloworld is best introduction to any programming language, Let's see below code snippet
     <i><b>
     // helloworld.go
     // Few things to note
@@ -142,7 +144,7 @@ The language has just entered into its version 1.21 But, has gained a huge momen
 
             fmt.Println("Welcome to Mavenir Go lang training")
     
-    fmt.Println is a function defined in fmt package this will print the specified data. Here wre are printing "Welcome to Mavenir Go lang training" 
+    fmt.Println is a function defined in fmt package this will print the specified data. Here we are printing "Welcome to Mavenir Go lang training" 
 
 7. ## Identifiers in Golang
     Identifiers are the user-defined name of the program components. In Go language, an identifier can be a variable name, function name, constant, statement labels, package name, or types.
@@ -166,7 +168,7 @@ The language has just entered into its version 1.21 But, has gained a huge momen
     ### Rules to define identifiers
     Below are the valid identifier names.
     
-    1. identifier must begin with a letter or an underscore(_). And the names may contain the letters ‘a-z’ or ’A-Z’ or digits 0-9 as well as the character ‘_’.
+    1. identifier must begin with a letter or an underscore (\_). And the names may contain the letters ‘a-z’ or ’A-Z’ or digits 0-9 as well as the character ‘_’.
     2. Identifier should not start with a digit.
     3. Identifier is case sensitive.
     4. Keywords are not allowed to use as an identifier name.
