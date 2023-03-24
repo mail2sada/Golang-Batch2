@@ -770,12 +770,169 @@
     Go supports only for loop and in multiple forms, go supports C/C++ kind of for loop with initialization;condition;increament, for with only condition, infinete loop and range loops.
 
     We will see eaxh of the loops one by one
+        ### Tradiional C/C++ style for loop
+        Loop will initialize the initialization block once, checks the condition and executes the loop statement if condition satisfies, after execution increments and then check condition, executes loop statements if condition satisfies. This will continue, until the condition is satisfies.
 
             syntax: C/C++ stype
-                for <initialization/declaration>; condition; increment {
+                for initialization/declaration; condition; increment {
                     // loop statements...
                 }
 
+            Example:
+                package main
+
+                import "fmt"
+
+                func main() {
+
+                    fmt.Println("Demo: traditional for loop")
+                    i := 0
+
+                    for i = 0; i < 10; i++ {
+                        fmt.Println("Value of i is ", i)
+                    }
+                }
+        ### for loop with condition
+        This loop will iterate and executes the loop statement until the condition is satisified.
+
+            syntact:
+                for condition {
+                    // loop statements
+                }
+
+            Example:
+
+                package main
+
+                import "fmt"
+
+                func main() {
+
+                    fmt.Println("Demo: for loop with condition")
+
+                    i := 10
+
+                    for i >= 0 {
+                        fmt.Println("Value of i is ", i)
+                        i--
+                    }
+                }
+        ### Infinite for loop
+            Infine loop executes statements infinitely untill and unless handled by loop control statements(loop control statements will be discussed in next section).
+
+            Syntax:
+                for {
+                    // loop statement
+                }
+            Example:
+                package main
+
+                import "fmt"
+
+                func main() {
+
+                    for {
+                        fmt.Println("This is infinite loop")
+                    }
+                }
+        ### For loop with range.
+            range is opertor in go lang that iterates over a collection (Array, Slice, String, Channels, Maps, etc, we will discuss this in further section). As range operators iterates over collection it returns 2 values, index or key and value, We will study range operator in detail in further section. 
+
+            This loop will iterate the collection and exits after the last item.
+
+            Syntax:
+                for idx, val := range collection {
+                    //loop statement.
+                }
+            
+            Example:
+                package main
+
+                import "fmt"
+
+                func main() {
+                    fmt.Println("Demo range loop")
+
+                    str := "Hello welcome to Mavenir"
+
+                    for idx, val := range str {
+
+                        fmt.Printf("\nstr[%d] value[%d] char[%c]", idx, val, val)
+                    }
+                }
             
 13. ## Loop Control Statements
+    There are 3 loop control statements in go lang, that lets you control the execution.
+    1. continue
+    2. break
+    3. goto
+
+    ### continue
+    continue statement in go is simillar to that of any other programming language. it will move the program control to the beginning of loop.
+
+            Syntax:
+                for condition {
+                    // loop statements
+                    if condition1 {
+                        continue
+                    }
+                }
+            Example:
+
+                package main
+
+                import "fmt"
+
+                func main() {
+
+                    fmt.Println("Demo: Loop control statement continue")
+
+                    for i := 0; i <= 10; i++ {
+
+                        if i%2 == 0 {
+                            continue
+                        }
+                        fmt.Println("Value of i:", i)
+                    }
+
+                    i := 0
+
+                    for i < 100 {
+                        i++
+                        if i%2 != 0 {
+                            continue
+                        }
+                        fmt.Println("Value of i:", i)
+                    }
+                }
+    ### break;
+        break statement in go is similar to that of any traditional programming language, it breaks the execution of loop and move control out of loop.
+
+        Syntax:
+            for condition {
+                // loop statement
+                if condition1 {
+                    break
+                }
+            }
+        Example:
+            package main
+
+            import "fmt"
+
+            func main() {
+                fmt.Println("Demo: loop control statements break")
+
+                i := 0
+
+                for {
+                    i++
+
+                    if i == 50 {
+                        break
+                    }
+                    fmt.Println("Value of i:", i)
+                }
+            }
+
 14. ## Switch Statement in Go

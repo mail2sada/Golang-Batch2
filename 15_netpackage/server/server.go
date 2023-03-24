@@ -48,25 +48,44 @@ type QueryParticipantResponse struct {
 
 type InviteRequest struct {
 	FromUUID string `json:From`
-	ToUUID string `json:To`
+	ToUUID   string `json:To`
 }
 
 type InviteResponse struct {
-	SessionID string `json:SessionID`
+	SessionID     string `json:SessionID`
 	SessionStatus string `json:SessionStatus`
 }
 
 type AcceptInviteRequest struct {
-	
+	SessionID     string `json:SessionID`
+	SessionStatus string `json:Session`
 }
 
-type 
+type AcceptInviteResponse struct {
+	SessionID     string `json:SessionID`
+	SessionStatus string `json:SessionStatus`
+}
+
+type SendMessageRequest struct {
+	SessionID string `json:SessionID`
+	From      string `json:From`
+	To        string `json:To`
+	Message   string `json:Message`
+}
+
+type TerminateChatRequest struct {
+	SessionID string `json:SessionID`
+	From      string `json:SessionID`
+}
 
 type SessionCommand struct {
-	Command           CmdSession `json:ChatCommand`
-	RegisterRequest   `json:SendMessage`
-	QueryParticipantRequest `json:EndChat`
-	InviteData        `json:Invite`
+	Command                 CmdSession `json:ChatCommand`
+	RegisterRequest         `json:RegisterRequest`
+	QueryParticipantRequest `json:QueryParticipantRequest`
+	InviteRequest           `json:InviteRequest`
+	AcceptInviteRequest     `json:AcceptInviteRequest`
+	SendMessageRequest      `json:SendMessageRequest`
+	TerminateChatRequest    `json:TerminateChatRequest`
 }
 
 type user struct {
