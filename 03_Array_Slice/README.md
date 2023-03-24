@@ -125,7 +125,10 @@
             }
 
     4. Initialising specific elements in array
-        We can intialize the specific elements of an array.
+    We can intialize the specific elements of an array.
+
+        Syntax:
+            var array[size]type = [size]type{idx1:val1, idx2:val2, idx3:, val3,... size}
         
     5. Initialising array with ellipses
     6. len function
