@@ -232,15 +232,90 @@
                 }
             }
 
-            
-
-
 2. Copying an Array into Another Array
-    1. Copying Array by value
-    2. Copuing Array by reference.
 
-3. Filter Array Elements
-4. Multidimensional Array
+    Array in go are of value type, when you assign an array to another variable, it creates a copy of array. When you pass array to a function it creates copy to a array, any changes made to the copied array will not impact original array
+
+        Syntax:
+            var array [size]type = [size]type {val1, val2, val3, } 
+
+            var arrayCopy = array
+
+        Example:
+            package main
+
+            import "fmt"
+
+            func main() {
+
+                fmt.Println("Demo copying array...")
+
+                var array [5]string = [5]string{"Golang", "is", "a", "wonderful", "language.."}
+
+                var copyArray = array
+
+                fmt.Println("Contents of array are:", array)
+
+                fmt.Println("Contents of copyArray are:", copyArray)
+
+                copyArray[3] = "I have changed this..."
+
+                fmt.Println("Printing array and copyArray after changing copyArray[3]=\"I have changed this...\"")
+
+                fmt.Println("Contents of array are:", array)
+
+                fmt.Println("Contents of copyArray:", copyArray)
+            }
+
+3. Multidimensional Array
+
+    Golang supports multi-dimensional arrays, 
+
+        Syntax:
+            var multiDimensionArray [size1][size2]type = [size1][size2]type {}
+        
+        Example:
+            package main
+
+            import "fmt"
+
+            func main() {
+                fmt.Println("Demo: Multi-dimentsional array")
+
+                var multiDimensionalArray [3][3]int = [3][3]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}
+
+                for i := 0; i < 3; i++ {
+                    for j := 0; j < 3; j++ {
+                        fmt.Printf(" %d ", multiDimensionalArray[i][j])
+                    }
+                    fmt.Println()
+                }
+
+            }
+
+
+4. Filter Array Elements
+    We can filter out specific number of elements from array, using (:). We will explore different ways of using (:)
+
+        Examples:
+            package main
+
+            import "fmt"
+
+            func main() {
+
+                fmt.Println("Demo: Filtering elements of array..")
+
+                var array [10]int = [10]int{10, 9, 8, 7, 6, 5, 4, 3, 2, 1}
+
+                fmt.Println("Filering out first 5 elements", array[:5])
+
+                fmt.Println("Fileterning out last 5 elements", array[5:])
+                fmt.Println("Filterning out from index 3 to 7", array[3:8])
+            }
+
+
+
 
 5. Slices in Golang
 6. Slice Composite Literal
