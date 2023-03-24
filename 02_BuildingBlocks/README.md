@@ -979,5 +979,125 @@
                 default:
                     //statements...
             } 
+        statement in switch is optional.
+        Example 1:
 
-        Example:
+            package main
+
+            import "fmt"
+
+            type Week uint8
+
+            const (
+                Sunday Week = iota
+                Monday
+                Tuesday
+                Wednsday
+                Thursaday
+                Friday
+                Saturday
+            )
+
+            func main() {
+                fmt.Println("Demo: Switch statement")
+
+                dayOFWeek := Saturday
+
+                switch dayOFWeek {
+                case Sunday:
+                    fmt.Println("Its Sunday, last day of your weekend")
+                case Monday:
+                    fmt.Println("Its Monday, beginning of the week")
+                case Tuesday:
+                    fmt.Println("Its Tuesday...")
+                case Wednsday:
+                    fmt.Println("Its Wednsday, I have lot of work")
+                case Thursaday:
+                    fmt.Println("Its Thurday, I am about to finish my work")
+                case Friday:
+                    fmt.Println("Finally Its Friday, weekend will start..")
+                case Saturday:
+                    fmt.Println("OhHo!! Its Saturday!! fun time...")
+                default:
+                    fmt.Println("I dont know who you are")
+                }
+
+            }
+
+        Example 2:
+            package main
+
+            import "fmt"
+
+            func main() {
+                fmt.Println("Demo: Demo Switch String...")
+
+                testString := "Hello"
+                switch testString {
+                case "Hello":
+                    fmt.Println("Its english")
+                case "Namaste":
+                    fmt.Println("Its Hindi")
+                default:
+                    fmt.Println("I am yet to learn new language..")
+                }
+            }
+        
+        Example 3:
+
+            package main
+
+            import "fmt"
+
+            type WeekDay uint8
+
+            const (
+                Sunday WeekDay = iota
+                Monday
+                Tuesday
+                Wednsday
+                Thursaday
+                Friday
+                Saturday
+            )
+
+            func main() {
+
+                switch dayOfWeek := Thursaday; dayOfWeek {
+                case Monday, Tuesday, Wednsday, Thursaday, Friday:
+                    fmt.Println("Working Day...")
+
+                case Saturday, Sunday:
+                    fmt.Println("Weekends funtime...")
+                }
+            }
+        
+        Example 4:
+            package main
+
+            import (
+                "fmt"
+            )
+
+            func main() {
+
+                percentageMarks := 90
+
+                switch {
+                case percentageMarks < 50:
+                    fmt.Println("Better luck next time")
+                case percentageMarks < 60:
+                    fmt.Println("You just made it, it could have been still better")
+                case percentageMarks < 70:
+                    fmt.Println("You did Ok...")
+                case percentageMarks <= 80:
+                    fmt.Println("You have done well")
+                case percentageMarks > 80:
+                    fmt.Println("Congratulations, you have performed very well....")
+                }
+            }
+
+
+
+
+
