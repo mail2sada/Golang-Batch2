@@ -174,10 +174,67 @@
                 fmt.Println("Contents of strNewArray:", strNewArray)
             }
 
-
-
     6. len function
+    len function is go built-in function, len function returns the number of items in the string.
+    func len(v Type) int
+
+    Takes any type as argument and returns the number of items
+
+        Syntax:
+            size := len(collection)
+
+        Example:
+            package main
+
+            import "fmt"
+
+            func main() {
+
+                fmt.Println("Demo: len function on collection")
+
+                var collectionInt [10]int = [10]int{1, 2, 3, 4, 5}
+
+                fmt.Println("Length of collectionInt is:", len(collectionInt))
+            }
+
     6. loop through an array
+    There are multiple ways of iterate over a array, we can iterate using for loop and range operator
+
+    Below are the examples to iterate over the loop
+
+        Example 1:
+            package main
+
+            import "fmt"
+
+            func main() {
+
+                fmt.Println("Demo: Iterating over a collection")
+
+                var collectionInt = [10]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+                for i := 0; i < len(collectionInt); i++ {
+                    fmt.Printf("collectionInt[%d]=%d\n", i, collectionInt[i])
+                }
+            }
+        Example 2:
+            package main
+
+            import "fmt"
+
+            func main() {
+                fmt.Println("Demo: iterating loop using range")
+
+                var strArray = [10]string{"Good", "Morning", "How", "Are", "You", "Wonderful", 9: "Amazing"}
+
+                for idx, val := range strArray {
+                    fmt.Println("strArray @Index:", idx, " is:", val)
+                }
+            }
+
+            
+
+
 2. Copying an Array into Another Array
     1. Copying Array by value
     2. Copuing Array by reference.
