@@ -11,7 +11,7 @@
     Data Types | Basic | Aggregate | Reference | Interface | 
     --- | --- | --- | --- |--- |
     1 | Numbers | Array | Pointers | interface | 
-    2 | strings | structs | Silice |  | 
+    2 | strings | structs | Slice |  | 
     3 | booleans |        | maps |  | 
     4 |         |         | functions |  | 
     5 |         |         | channels |  | 
@@ -40,7 +40,7 @@
     byte | It is a synonym of uint8. | 
     uintptr | It is an unsigned integer type. Its width is not defined, but its can hold all the bits of a pointer value.| 
 
-        2. Floating Point (Franctional numbers)
+        2. Floating Point (Fractional numbers)
         Go supports 32 and 64 bit floats
 
     Data Type| 	Description | 
@@ -59,7 +59,7 @@
     ###
 
     2. strings
-    The string data type represents a sequence of Unicode code points. Or in other words, we can say a string is a sequence of immutable bytes, means once a string is created you cannot change that string. A string may contain arbitrary data, including bytes with zero value in the human-readable form.
+    The string data type represents a sequence of Unicode code points. Or in other words, we can say a string is a sequence of immutable bytes, meaning that once a string is created you cannot change that string. A string may contain arbitrary data, including bytes with zero value in the human-readable form.
 
     3. booleans
     The boolean data type represents only one bit of information either true or false. The values of type boolean are not converted implicitly or explicitly to any other type. 
@@ -67,9 +67,9 @@
     Aggregate, Reference, Interface types will be discussed in further section
 
 2. ## Variables
-    A typical program uses various values that may change during its execution. variable can store temporarily in the Random Access Memory of the computer and these values in this part of memory vary throughout the execution and hence another term for this came which is known as Variables. So basically, a Variable is a placeholder of the information which can be changed at runtime. And variables allow to Retrieve and Manipulate the stored information.
+    A typical program uses various values that may change during its execution. variable can store temporarily in the Random Access Memory of the computer and these values in this part of memory vary throughout the execution and hence another term for this came up which is known as Variables. So basically, a Variable is a placeholder of the information which can be changed at runtime. And variables allow to Retrieve and Manipulate the stored information.
 
-    1. Delcaring variables
+    1. Declaring variables
 
     var keyword is used to specify a variable.
 
@@ -185,7 +185,7 @@
     https://github.com/mail2sada/Golang-Batch2/blob/main/02_BuildingBlocks/01_Variables/02_var.go
 
 3. ## Constants
-    As the topic suggest constant means a identifier whose value is not goiing to change.
+    As the topic suggests constant means a identifier whose value is not going to change.
 
             Syntax:
 
@@ -234,7 +234,7 @@
 
     In the past, we only had one character set, and that was known as ASCII (American Standard Code for Information Interchange). There, we used 7 bits to represent 128 characters, including upper and lowercase English letters, digits, and a variety of punctuations and device-control characters. Due to this character limitation, the majority of the population is not able to use their custom writing systems. To solve this problem, Unicode was invented. Unicode is a superset of ASCII that contains all the characters present in today’s world writing system. It includes accents, diacritical marks, control codes like tab and carriage return, and assigns each character a standard number called “Unicode Code Point”, or in Go language, a “Rune”. The Rune type is an alias of int32. Important Points:
 
-    Always remember, a string is a sequence of bytes and not of a Rune. A string may contain Unicode text encoded in UTF-8. But, the Go source code encodes as UTF-8, therefore, no need to encode the string in UTF-8.
+    Always remember, a string is a sequence of bytes and not of a Rune. A string may contain Unicode text encoded in UTF-8. But, the Go source code encodes as UTF-8, therefore there is no need to encode the string in UTF-8.
 
     UTF-8 encodes all the Unicode in the range of 1 to 4 bytes, where 1 byte is used for ASCII and the rest for the Rune.
     ASCII contains a total of 256 elements and out of which, 128 are characters and 0-127 are identified as code points. Here, code point refers to the element which represents a single value.
@@ -420,7 +420,7 @@
     Go Supports 6 bitwise operators, which work at bit level or used to perform bit by bit operations. below are the bitwise operators 
 
     1. & (bitwise AND): Takes two numbers as operands and does AND on every bit of two numbers. The result of AND is 1 only if both bits are 1.
-    2. | (bitwise OR): Takes two numbers as operands and does OR on every bit of two numbers. The result of OR is 1 any of the two bits is 1.
+    2. | (bitwise OR): Takes two numbers as operands and does OR on every bit of two numbers. The result of OR is 1 if any of the two bits is 1.
     3. ^ (bitwise XOR): Takes two numbers as operands and does XOR on every bit of two numbers. The result of XOR is 1 if the two bits are different.
     4. << (left shift): Takes two numbers, left shifts the bits of the first operand, the second operand decides the number of places to shift.
     5. \>\> (right shift): Takes two numbers, right shifts the bits of the first operand, the second operand decides the number of places to shift.
@@ -466,7 +466,7 @@
     8. A variable which is declared inside a loop body will not be visible to the outside of loop body.
 
     ### Global Variables
-    1. The variables which are defined outside of a function or a block is termed as Global variables.
+    1. The variables which are defined outside of a function or a block is termed as Global variable.
     2. These are available throughout the lifetime of a program.
     3. These are declared at the top of the program outside all of the functions or blocks.
     4. These can be accessed from any portion of the program.
@@ -507,7 +507,7 @@
 
 7. ## Type Conversion
 
-    Type conversion happens when we assign the value of one data type to another. Statically typed languages like C/C++, Java, provide the support for Implicit Type Conversion but Golang doesn't, as it doesn’t support the automatic type conversion or implicit iype conversion even if the data types are compatible. The reason for this is the strong sype system of the golang doesn’t allow . For type conversion, you must perform explicit conversion. 
+    Type conversion happens when we assign the value of one data type to another. Statically typed languages like C/C++, Java, provide the support for Implicit Type Conversion but Golang doesn't, as it doesn’t support the automatic type conversion or implicit type conversion even, if the data types are compatible. The reason for this is the strong type system of golang doesn’t allow. For type conversion, you must perform explicit conversion. 
 
     As per Golang Specification, there is no typecasting word or terminology in Golang. If you will try to search Type Casting in Golang Specifications or Documentation, you will find nothing like this. There is only type conversion. In other programming languages, typecasting is also termed as the type conversion.
 
@@ -718,7 +718,7 @@
              }
 
     ### if-else-if
-    Here, a user can decide among multiple options. The if statements are executed from the top down. As soon as one of the conditions controlling the if is true, the statement associated with that is executed, and the rest of the ladder is bypassed. If none of the conditions is true, then the final else statement will be executed.
+    Here, a user can decide among multiple options. The if statements are executed from the top down. As soon as one of the conditions controlling the if is true, the statement associated with that is executed, and the rest of the ladder is bypassed. If none of the conditions are true, then the final else statement will be executed.
     Important Points:
  
     if statement can have zero or one else’s and it must come after any else if’s.
@@ -767,11 +767,11 @@
 
 
 12. ## Loops in Golang
-    Go supports only for loop and in multiple forms, go supports C/C++ kind of for loop with initialization;condition;increament, for with only condition, infinete loop and range loops.
+    Go supports only for loop and in multiple forms, go supports C/C++ kind of for loop with initialization;condition;increament, for with only condition, infinite loop and range loops.
 
-    We will see eaxh of the loops one by one
-        ### Tradiional C/C++ style for loop
-        Loop will initialize the initialization block once, checks the condition and executes the loop statement if condition satisfies, after execution increments and then check condition, executes loop statements if condition satisfies. This will continue, until the condition is satisfies.
+    We will see each of the loops one by one
+        ### Traditional C/C++ style for loop
+        Loop will initialize the initialization block once, checks the condition and executes the loop statement if condition satisfies, after execution increments and then check condition, executes loop statements if condition satisfies. This will continue, until the condition is satisfied.
 
             syntax: C/C++ stype
                 for initialization/declaration; condition; increment {
@@ -862,13 +862,13 @@
                 }
             
 13. ## Loop Control Statements
-    There are 3 loop control statements in go lang, that lets you control the execution.
+    There are 3 loop control statements in go lang, that let you control the execution.
     1. continue
     2. break
     3. goto
 
     ### continue
-    continue statement in go is simillar to that of any other programming language. it will move the program control to the beginning of loop.
+    continue statement in go is similar to that of any other programming language. it will move the program control to the beginning of loop.
 
             Syntax:
                 for condition {
@@ -967,3 +967,17 @@
             }
 
 14. ## Switch Statement in Go
+
+    Go offers a rich variety of switch statements, like any other traditional language go offers switching with constant comparison. In addition we can switch on multiple case, on condition and on types (We will discuss conditional types in interface section)
+
+        Syntax:
+            switch statemet {
+                case expression1:
+                    //statements...
+                case expression2:
+                    //statements...
+                default:
+                    //statements...
+            } 
+
+        Example:
