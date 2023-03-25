@@ -314,17 +314,201 @@
                 fmt.Println("Filterning out from index 3 to 7", array[3:8])
             }
 
+6. Comparison of Arrays.
 
+        Exmaple:
+            package main
 
+            import "fmt"
+
+            func main() {
+                fmt.Println("Demo: comparision of arrays")
+
+                var stringArray = [5]string{"Hello", "how ", "are", "you", "?"}
+
+                fmt.Println("Contents of stringArray:", stringArray)
+
+                fmt.Println("Copying array...")
+                copyArray := stringArray
+
+                if copyArray == stringArray {
+                    fmt.Println("Both arrays are equal..")
+                }
+
+                if copyArray != stringArray {
+                    fmt.Println("Both arrays are unequal..")
+                }
+
+                fmt.Println("Changing contents of array..")
+
+                stringArray[4] = "Wow"
+
+                if copyArray == stringArray {
+                    fmt.Println("Both arrays are equal..")
+                }
+
+                if copyArray != stringArray {
+                    fmt.Println("Both arrays are unequal..")
+                }
+
+            }
 
 5. Slices in Golang
-6. Slice Composite Literal
-7. Copying one Slice into another Slice
-8. Comparing two Slices in Golang
-9. Checking the Equality of Slices in Golang
-10. Sorting a Slice in Golang
-11. Trimming a Slice in Golang
-12. Splitting a Slice in Golang
-13. Slice Sort, 
-14. Reverse, 
-15. Search Functions
+    A slice is a flexible and extensible data structure to implement and manage collections of data. Slices are made up of multiple elements of same type. A slice is a segment of dynamic arrays that can grow and shrink. Like arrays, slices are index-able and have a length and capacity property. 
+
+    Slice contains 3 components,
+    1. Pointer: The pointer is used to points to the first element of the array that is accessible through the slice. 
+    2. Length: The length is the total number of elements present in the array.
+    3. Capacity: The capacity represents the maximum size upto which it can expand.
+
+    Slices are of reference type, data is accessible with the name of slice followec by index in []. Length represents the length of the slice and it is retrieved using len function. Capacity indicates the current capacity of the slice, when new elements are appended in array up to full capacity then slice data will be reallocated to a new continues memory and capacity will be recalculated. Calculating this capacity is internal to go.
+
+    ### Declaring Slice
+
+        Syntax:
+            // Only difference between array and slice declaration is size, while declaring slice we won't mention slice.
+            var intSlice []int = []int {}
+
+            var sliceString []string = make([]string, 10)
+        Exmaple:
+
+            package main
+
+            import "fmt"
+
+            func main() {
+
+                fmt.Println("Demo: Slice Declaration...")
+
+                var intSlice []int = []int{1, 2, 3}
+
+                intSlice = append(intSlice, 4, 5, 6, 7, 8, 9, 10)
+
+                fmt.Println("Length of the slice:", len(intSlice))
+                fmt.Println("Capacity of the slice:", cap(intSlice))
+
+                fmt.Println("Accessing element at index [3]:", intSlice[3])
+
+                fmt.Println("Iterating slice using len")
+                for i := 0; i < len(intSlice); i++ {
+                    fmt.Println("Content at index [", i, "]  = ", intSlice[i])
+                }
+
+                fmt.Println("Iterating slice using range operator")
+                for idx, val := range intSlice {
+                    fmt.Println("Content at index [", idx, "]  = ", val)
+
+                }
+
+            }
+        Example2:
+
+            package main
+
+            import "fmt"
+
+            func main() {
+
+                fmt.Println("Demo: Declaration of slice using make...")
+
+                var myStringSlice []string = make([]string, 5)
+
+                fmt.Println("Length of myStringSlice:", len(myStringSlice))
+                fmt.Println("Capacity of myStringSlice:", cap(myStringSlice))
+
+                //populating list with few elements.
+
+                myStringSlice = append(myStringSlice, "Hello", "how", "are", "you")
+
+                fmt.Println("Length of myStringSlice:", len(myStringSlice))
+                fmt.Println("Capacity of myStringSlice:", cap(myStringSlice))
+
+                fmt.Println("Iterating through the slice using len")
+
+                for i := 0; i < len(myStringSlice); i++ {
+
+                    fmt.Println("Contents of myStringSlice[", i, " ]", myStringSlice[i])
+                }
+
+                fmt.Println("Iterating through the slice using range")
+
+                for idx, val := range myStringSlice {
+                    fmt.Println("Contents of myStringSlice[", idx, " ]", val)
+
+                }
+
+            }
+
+    ### make 
+
+    make is a Go function, that enables you to create slice, map, channel, etc. Data types will be allocated in heap.
+    func make(t Type, size ...IntegerType) Type
+
+    #### Parameters:
+    1. t Type: The type that is allocated and for which the reference will be returned. Example: map, slice, etc.
+    2. size: The size of the container.
+    3. capacity: The total capacity that will be allocated. capacity must be greater than or equal to size.
+
+    #### Return value
+    make() returns a reference to the map, slice, or channel that is allocated on the memory.
+
+        syntax:
+            var data = make([]type, length, capacity)
+            //capacity is a optional parameter.
+            package main
+
+            import "fmt"
+
+            func main() {
+                fmt.Println("Demo: Usage of make in slice...")
+
+                // statement below will allocate a string slice of lenght 5
+                var stringSlice = make([]string, 5)
+
+                // here both capacity and length should be same
+
+                fmt.Println("Length of stringSlice:", len(stringSlice))
+                fmt.Println("Capacity of stringSlice:", cap(stringSlice))
+
+                fmt.Println("\nWe are re allocating stringSlice using length and capacity")
+
+                stringSlice = make([]string, 5, 10)
+                fmt.Println("Length of stringSlice:", len(stringSlice))
+                fmt.Println("Capacity of stringSlice:", cap(stringSlice))
+            }
+
+6. Composite Literal
+
+    Composite literal is a literal which is usied to initialize composite type. Go supports a range of composite types such as arrays, slice, structs, maps, channel, etc. A literal defining composite type are known as composite literals.
+
+    Example
+            var testArray = [10]int{1,2,3,4,5,6,7,8,9,10}
+
+            // {1,2,3,4,5,6,7,8,9,10} is a composite literal.
+
+            val multiDimensionArray [3][3] int = {{1,2,3},
+                                                  {4,5,6},
+                                                  {7,8,9}}
+            // {{1,2,3},
+            // {4,5,6}
+            // {7,8,9}}
+
+7. Functions to handle slice.
+    Go built-in function suit provide below methods for slice handling.
+    len() // returns the lengh of composite type, works on composite type slice, array, chan, map
+    cap() // return the the capacity of slice
+    make() // function allocates the composite type slice, chan, map
+    append() //function enables you to add new elements in slice.
+
+7. Appending, Updating and Deleting contents of slice
+
+
+8. Copying one Slice into another Slice
+9. Comparing two Slices in Golang
+10. Checking the Equality of Slices in Golang
+12. Sorting a Slice in Golang
+12. Trimming a Slice in Golang
+13. Splitting a Slice in Golang
+14. Slice Sort, 
+15. Reverse, 
+16. Search Functions
