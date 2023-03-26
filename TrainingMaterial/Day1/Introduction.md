@@ -17,30 +17,19 @@
 <slide1>
   
    
-    
-     
-      
-       
-        
-         
-          
-           
-            
 
-
-
-> What you need to run Go Programs? – Go Compiler
-https://go.dev/doc/install
- – Editor https://code.visualstudio.com/download
-> Quick trial
-– Go playground:
-https://go.dev/play/
-> Go standard library:
-– https://pkg.go.dev/std
-> Documentation
-– https://go.dev/doc/
-> Quick Help
-– https://go.dev/doc/effective_go
+## How to run Go program?
+-   ## Compiler https://go.dev/doc/install
+-   ## Editor https://code.visualstudio.com/download
+-   ## Quick trial
+-   ## Go playground:
+-   ## https://go.dev/play/
+-   ## Go standard library 
+    -   ### https://pkg.go.dev/std
+-   ## Documentation
+    -   ### https://go.dev/doc/
+-   ## Quick Help
+    -   ### https://go.dev/doc/effective_go
 
 
 
