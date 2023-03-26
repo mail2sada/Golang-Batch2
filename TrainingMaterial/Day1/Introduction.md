@@ -14,7 +14,7 @@
 -   ### Type Safety
 -   ### Rich open-source package
 
-[next](How to run Go program?)
+[## How to run Go program?]
 
 <br/>
 <br/>
