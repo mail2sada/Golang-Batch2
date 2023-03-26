@@ -14,7 +14,7 @@
 -   ### Type Safety
 -   ### Rich open-source package
 
-<a href="doc:introduction" target="_blank">Introduction</a>
+[next](How to run Go program?)
 
 <br/>
 <br/>
