@@ -18,7 +18,6 @@
 <br/>
 <br/>
 <br/>
-
 <br/>
 
 
@@ -36,7 +35,11 @@
 -   ### Quick Help
     -   #### https://go.dev/doc/effective_go
 
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 
@@ -48,13 +51,25 @@ Hello world with Go...
 > Importing packages
 > Hello word..
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 Go Code Structure
 > Go code is always packaged in package
 > Go code begins its execution from main function in main package
 > Package name is specified using package keyword – Syntax package "package-name"
 > Package can be imported using import key word
   – Syntax
-Import "package-name"  
+Import "package-name" 
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 
@@ -65,6 +80,12 @@ Identifiers are the user-defined name of the program components
 – constant
 – statement labels – package name – Types
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 
 Golang: Variables
 A variable is the name of a memory location, that stores a data of a specific data type
@@ -72,6 +93,12 @@ A variable is the name of a memory location, that stores a data of a specific da
 – size
 – range
 – operations
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 Golang: Variable Naming convention
@@ -81,12 +108,24 @@ Golang: Variable Naming convention
 > The variable name cannot be any keyword name in Go
 > There is no limit on the length of the variable name.
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 
 Golang: Variable declaration
 > Variable can be declared using keyword var Syntax: var <variable_name> <type>
 var <variable_name> <type> = <value>
 var <name1>, <name2>,....<nameN> <type>
 var <name1>, <name2>, .....,<nameN> <type> = <value1>, <value2>, .....,<valueN> var <varialbe_name> = <value>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 Golang: Scope of variable
@@ -95,14 +134,24 @@ Golang: Scope of variable
 > Global variable
 – Globalvariableareavailablethroughoutthelifetimeofaprogram
 – Avariabledeclaredatthetopofafile,outsidethescopeofanyfunctionorblock.
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
   
 
 
 Golang: Keywords
-> Keywords are basic constructs of program – Gohas25keywords
-– Eg. Break, continue, etc... https://github.com/mail2sada/GolangTraining/blob/main/training_material/GolangTraining
-Content.xlsx
-Visit keyword sheet
+> Keywords are basic constructs of program – Go has 25 keywords
+– Eg. Break, continue
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 
@@ -115,6 +164,12 @@ Golang: Data Type
 – Reference type: Pointers, slices, maps, functions, and channels come under this category.
 – Interface type
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 
 
 Golang: Constant
@@ -123,6 +178,12 @@ Golang: Constant
 const <const-name> = <value> Eg. const c string = "circle"
 const c = "circle"
 Scope of constants is same as variable scope (local and global)
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 Golang: Operators
@@ -134,7 +195,11 @@ Golang: Operators
 – Assignment Operators
 – Misc 
 
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 Golang:Arithmatic Operators
@@ -148,7 +213,11 @@ Golang:Arithmatic Operators
 – ‘/’ operator divides the first operand by the second. For example, x/y.
 – Modulus:
 – ‘%’ operator returns the remainder when the first operand is divided by the second. For example, x%y.
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 Golang:Relational Operators
@@ -166,13 +235,21 @@ Golang:Relational Operators
 -   ‘<='(Less Than Equal To)
     -   5<=5 will also return true.
 
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 Golang:Logical Operators
 -   AND(&&) operator returns true when both the conditions in consideration are satisfied. a && b returns true when both a and b are true ( i.e.        non-zero).
 -   a || b returns true if one of a or b is true (i.e. non-zero). Of course, it returns true when both a and b are true.
     Logical(‘||’) operator returns true when one (or both) of the conditions in consideration is satisfied. NOT(‘!’) operator returns true the condition in consideration is not satisfied.
 -   !a returns true if a is false, i.e. when a=0.
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 Golang:Bitwise Operators
 -   bitwise AND(&): Takes two numbers as operands and does AND on every bit of two numbers. The result of AND is 1 only if both
@@ -184,7 +261,11 @@ bits are 1.
     shift.
 -   AND NOT(&^): This is a bit clear operator.
 
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 Golang:Assignment Operators
 -   > “=” : is used to assign the value on the right to the variable on the left.
@@ -198,14 +279,22 @@ Golang:Assignment Operators
 -   > “|=”: first “Bitwise Inclusive OR” the current value of the variable on left by the value on the right and then assigns the result to the variable on the left.
 -   > “<<=”: first “Left shift AND” the current value of the variable on left by the value on the right and then assigns the result to the variable on the left.
 -   > “>>=”: first “Right shift AND” the current value of the variable on left by the value on the right and then assigns the result to the variable on the left.
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 Golang: Misc Operators
 -   > &: This operator returns the address of the variable.
 -   > *: This operator provides pointer to a variable.
 -   > <-:The name of this operator is receive. It is used to receive a value from the channel.
 
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 Golang: Scope of Variable
 -   Local Variable
@@ -217,7 +306,11 @@ Golang: Scope of Variable
     -   > These variables are garbage collected after the function’s execution is over.
     -   > A variable which is declared inside a loop body will not be visible to the outside of loop body.
 
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 Golang:Scope of Variable Global Variable
 -   > The variables which are defined outside of a function or a block is termed as Global variables.
@@ -225,7 +318,11 @@ Golang:Scope of Variable Global Variable
 -   > These are declared at the top of the program outside all of the functions or blocks.
 -   > These can be accessed from any portion of the program.
 
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 Golang:Type casting
 -   > Golang doesn't support implicit type conversion.
@@ -236,13 +333,24 @@ Golang:Type casting
                 var i int
                 var f float64 = 10.55 i = int(f)
 
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 Golang:Declaring variable with :=
 -   > := is known as short variable declaration operator
 -   > Creates the variables having a proper name and initial value
 -   > Declare and initialize the local variables inside the functions
 -   > Type of the variable is determined by the type of the expression Syntax variable_name := expression or value
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 
 
 Golang: Decision Making statement
@@ -252,6 +360,12 @@ Golang: Decision Making statement
 -   > if...else if....else statement - executes different codes for more than two conditions
 -   > The switch...case statement - selects one of many blocks of code to be executed
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 
 Golang: Decision Making statement
 -   if statement
@@ -259,6 +373,13 @@ Golang: Decision Making statement
             if condition{
                 // code to be executed if condition is true
             }
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 Golang: Decision Making statement
@@ -272,7 +393,11 @@ Golang: Decision Making statement
                 // code to be executed if condition is false 
             }
 
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 Golang: Decision Making statement
@@ -288,7 +413,11 @@ Golang: Decision Making statement
             // code to be executed if both condition1 and condition2 are false
             }
 
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
  
 Golang: Decision Making statement
@@ -299,7 +428,11 @@ Golang: Decision Making statement
             // code to be executed if condition is true
             }
 
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 Golang: Decision Making statement
 -   Golang - switch Statement
@@ -314,6 +447,13 @@ Golang: Decision Making statement
                 default:
                     <stmt> 
             }
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 
