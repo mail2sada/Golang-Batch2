@@ -200,7 +200,7 @@
 
 ## Golang: Keywords
 - ###  Keywords are basic constructs of program – Go has 25 keywords
-            Eg. Break, continue
+            Eg. break, continue
 
 <br/>
 <br/>
