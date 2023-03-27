@@ -16,12 +16,12 @@ Label1:
 		fmt.Println("Value of x:", x)
 		if x > 5 {
 			fmt.Println("Going to label 1")
-			goto Label1
+			goto Label2
 		}
 
 		if x > 8 {
 			fmt.Println("Goining to label2")
-			goto Label2
+			goto Label1
 		}
 
 	}
