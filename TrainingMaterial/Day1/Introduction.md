@@ -42,6 +42,12 @@
 <br/>
 <br/>
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 
 
 ## Hello world with Go...
@@ -51,6 +57,12 @@
 - ###   Function main() is the entry point of the code.
 - ###   Importing packages
 - ###   Hello word..
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 <br/>
 <br/>
@@ -74,6 +86,12 @@
 <br/>
 <br/>
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 
 
 ## Golang: Identifiers
@@ -82,6 +100,12 @@
 - ###  function name
 - ###  constant
 - ###   statement labels – package name – Types
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 <br/>
 <br/>
@@ -103,6 +127,12 @@
 <br/>
 <br/>
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 
 ## Golang: Variable Naming convention
 - ###  Variable name can only start with a letter or an underscore
@@ -110,6 +140,12 @@
 - ###  Go is case sensitive so uppercase and lowercase letters are treated differently
 - ###  The variable name cannot be any keyword name in Go
 - ###  There is no limit on the length of the variable name.
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 <br/>
 <br/>
@@ -134,6 +170,12 @@
 <br/>
 <br/>
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 
 ## Golang: Scope of variable
 - ###  Local variable
@@ -147,12 +189,24 @@
 <br/>
 <br/>
 <br/>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
   
 
 
 ## Golang: Keywords
 - ###  Keywords are basic constructs of program – Go has 25 keywords
             Eg. Break, continue
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 <br/>
 <br/>
@@ -177,6 +231,12 @@
 <br/>
 <br/>
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 
 
 ## Golang: Constant
@@ -185,6 +245,12 @@
             const <const-name> = <value> Eg. const c string = "circle"
             const c = "circle"
 Scope of constants is same as variable scope (local and global)
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 <br/>
 <br/>
@@ -208,6 +274,12 @@ Scope of constants is same as variable scope (local and global)
 <br/>
 <br/>
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 
 ## Golang:Arithmatic Operators
 - ###  Addition: ‘+’ operator adds two operands. For example, x+y.
@@ -221,21 +293,33 @@ Scope of constants is same as variable scope (local and global)
 <br/>
 <br/>
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 
 ## Golang:Relational Operators
 
 -   ## =='(Equal To) 
-    -   example, 5==5 will return true.
+    -   ### example, 5==5 will return true.
 -   ## ‘!='(Not Equal To)
-    -   example, 5!=5 will return false.
+    -   ### example, 5!=5 will return false.
 -   ## ‘>'(Greater Than)
-    -   example, 6>5 will return true.
+    -   ### example, 6>5 will return true.
 -   ## ‘<‘(Less Than)
-    -   example, 6<5 will return false.
+    -   ### example, 6<5 will return false.
 -   ## ‘>='(Greater Than Equal To)
-    -   example, 5>=5 will return true.
+    -   ### example, 5>=5 will return true.
 -   ## ‘<='(Less Than Equal To)
-    -   5<=5 will also return true.
+    -   ### 5<=5 will also return true.
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 <br/>
 <br/>
@@ -246,7 +330,13 @@ Scope of constants is same as variable scope (local and global)
 ## Golang:Logical Operators
 -   ## AND(&&) operator returns true when both the conditions in consideration are satisfied. a && b returns true when both a and b are true ( i.e.        non-zero).
 -   ## a || b returns true if one of a or b is true (i.e. non-zero). Of course, it returns true when both a and b are true. Logical(‘||’) operator      returns true when one (or both) of the conditions in consideration is satisfied. NOT(‘!’) operator returns true the condition in consideration is not satisfied.
--   #  !a returns true if a is false, i.e. when a=0.
+-   ##  !a returns true if a is false, i.e. when a=0.
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 <br/>
 <br/>
 <br/>
@@ -260,6 +350,12 @@ Scope of constants is same as variable scope (local and global)
 -   ## left shift(<<): Takes two numbers, left shifts the bits of the first operand, the second operand decides the number of places to shift.
 -   ## right shift(>>): Takes two numbers, right shifts the bits of the first operand, the second operand decides the number of places to shift.
 -   ## AND NOT(&^): This is a bit clear operator.
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 <br/>
 <br/>
@@ -285,10 +381,22 @@ Scope of constants is same as variable scope (local and global)
 <br/>
 <br/>
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 ## Golang: Misc Operators
 -   ## &: This operator returns the address of the variable.
 -   ## *: This operator provides pointer to a variable.
 -   ## <-:The name of this operator is receive. It is used to receive a value from the channel.
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 <br/>
 <br/>
@@ -312,11 +420,23 @@ Scope of constants is same as variable scope (local and global)
 <br/>
 <br/>
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 ## Golang:Scope of Variable Global Variable
 -   ###  The variables which are defined outside of a function or a block is termed as Global variables.
 -   ###  These are available throughout the lifetime of a program.
 -   ###  These are declared at the top of the program outside all of the functions or blocks.
 -   ###  These can be accessed from any portion of the program.
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 <br/>
 <br/>
@@ -339,11 +459,23 @@ Scope of constants is same as variable scope (local and global)
 <br/>
 <br/>
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 ## Golang:Declaring variable with :=
 -   ###  := is known as short variable declaration operator
 -   ###  Creates the variables having a proper name and initial value
 -   ###  Declare and initialize the local variables inside the functions
 -   ###  Type of the variable is determined by the type of the expression Syntax variable_name := expression or value
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 <br/>
 <br/>
@@ -366,6 +498,12 @@ Scope of constants is same as variable scope (local and global)
 <br/>
 <br/>
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 
 ## Golang: Decision Making statement
 -   ## if statement
@@ -374,6 +512,12 @@ Scope of constants is same as variable scope (local and global)
                 // code to be executed if condition is true
             }
 
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 <br/>
 <br/>
@@ -392,6 +536,12 @@ Scope of constants is same as variable scope (local and global)
             } else {
                 // code to be executed if condition is false 
             }
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 <br/>
 <br/>
@@ -419,6 +569,12 @@ Scope of constants is same as variable scope (local and global)
 <br/>
 <br/>
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
  
 ## Golang: Decision Making statement
 -   ## Golang - if statement initialization
@@ -427,6 +583,12 @@ Scope of constants is same as variable scope (local and global)
             if var declaration; condition {
                 // code to be executed if condition is true
             }
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 <br/>
 <br/>
@@ -451,6 +613,12 @@ Scope of constants is same as variable scope (local and global)
 ## Golang:Decision Making Statement
 
 
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 <br/>
 <br/>
