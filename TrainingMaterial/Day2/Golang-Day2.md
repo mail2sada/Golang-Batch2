@@ -5,7 +5,16 @@
     -  ### Strings are the immutable chain of arbitrary bytes, including bytes with zero values
     -  ### String is a read-only slice of bytes
     -  ### Bytes of the strings can be represented in the Unicode text using UTF-8 encoding
-    
+
+    -   ## String Literals
+        -   ### Using double quotes(“”)
+        -   ### String literals are created using double-quotes(“”)
+        -   ### This type of string support escape character Using backticks(“)
+        -   ### String literals are created using backticks(“) and known as raw literals
+        -   ### Raw literals do not support escape characters
+        -   ### Can span multiple lines
+        -   ### Can contain any character except backtick
+        -   ### Used for writing multiple line message, in the regular expressions, and in HTML.
 -   ## Different ways to compare Strings
 -   ## Different ways to concatenate two strings
 -   ## Trimming a String in Golang
