@@ -1,5 +1,11 @@
 # Strings 
 -   ## Strings in Golang
+    -  ### It is a sequence of variable-width characters
+    -  ### Every character is represented by one or more bytes using UTF-8 Encoding
+    -  ### Strings are the immutable chain of arbitrary bytes, including bytes with zero values
+    -  ### String is a read-only slice of bytes
+    -  ### Bytes of the strings can be represented in the Unicode text using UTF-8 encoding
+    
 -   ## Different ways to compare Strings
 -   ## Different ways to concatenate two strings
 -   ## Trimming a String in Golang
