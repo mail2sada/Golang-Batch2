@@ -5,8 +5,18 @@
     -  ### Strings are the immutable chain of arbitrary bytes, including bytes with zero values
     -  ### String is a read-only slice of bytes
     -  ### Bytes of the strings can be represented in the Unicode text using UTF-8 encoding
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
--   ## String Literals
+- ## String Literals
     -   ### Using double quotes(“”)
     -   ### String literals are created using double-quotes(“”)
     -   ### This type of string support escape character Using backticks(“)
@@ -15,7 +25,16 @@
     -   ### Can span multiple lines
     -   ### Can contain any character except backtick
     -   ### Used for writing multiple line message, in the regular expressions, and in HTML.
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
     
 -   ## Different ways to compare Strings
 -   ## Different ways to concatenate two strings
