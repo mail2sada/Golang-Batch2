@@ -64,7 +64,7 @@ func main() {
 	res, err := DivideSlice(sliceX, slicey)
 
 	if err != nil {
-		var customError *MyCustomError = err
+		var customError *MyCustomError = err.(*MyCustomError)
 		switch customError.errorCode {
 		case 0:
 			fmt.Println("Undefined")
