@@ -26,6 +26,7 @@ func main() {
 
 }
 
+
 func (str *string) myString() {
 
 }

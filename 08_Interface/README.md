@@ -29,9 +29,7 @@ The interface is of two types
 -   #### static 
     The static type is the interface itself. However interface does not have a static value so it always points to the dynamic values.
 -   #### dynamic type
-The static type is the interface itself, for example, tank in the below example. But interface does not have a static value so it always points to the dynamic values.
-A variable of the interface type containing the value of the Type which implements the interface, so the value of that Type is known as dynamic value and the type is the dynamic type. It is also known as concrete value and concrete type.
-
+    A variable of the interface type containing the value of the Type which implements the interface, so the value of that Type is known as dynamic value and the type is the dynamic type. It is also known as concrete value and concrete type.
 
 2. Multiple Interfaces
 4. Embedding Interfaces
