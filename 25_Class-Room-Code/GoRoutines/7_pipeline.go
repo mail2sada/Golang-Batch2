@@ -46,7 +46,6 @@ func Processor(in <-chan int) chan []int {
 func Consumer(in <-chan []int) {
 	go func() {
 		fmt.Println("Consumer:: in ")
-
 		defer wg.Done()
 		for slice := range in {
 			fmt.Println("Consumer:: slice")

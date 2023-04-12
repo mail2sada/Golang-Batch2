@@ -10,7 +10,6 @@ import (
 func log(msg string) {
 	var b = pool.Get().(bytes.Buffer)
 
-	var b byte.buffer
 
 	b.Reset()
 

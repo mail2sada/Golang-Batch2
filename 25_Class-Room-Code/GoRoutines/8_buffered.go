@@ -31,9 +31,8 @@ func processor(in <-chan int) chan int {
 	processChan := make(chan int)
 	wg.Add(1)
 	go func() {
-		defer close(processChan)
 		defer wg.Done()
-
+		defer close(processChan)
 		log.Println("In processor routine")
 		for val := range in {
 			processChan <- val * val
@@ -51,7 +50,6 @@ func consumer(in <-chan int) {
 		for val := range in {
 			fmt.Println(val)
 		}
-
 	}()
 }
 

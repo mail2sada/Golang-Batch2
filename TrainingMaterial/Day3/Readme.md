@@ -31,15 +31,15 @@
 
 
 ### Date and Time
-1. Create a new time
-2. Using time.Now()
-3. Using time.Date()
-4. Understanding Duration
-5. Add or Subtract to a time
-6. Add to time, Subtract to time
-7. Time Parsing/Formatting
-8. Time Parse Example
-9. Time Formatting Example
+1.  Create a new time
+2.  Using time.Now()
+3.  Using time.Date()
+4.  Understanding Duration
+5.  Add or Subtract to a time
+6.  Add to time, Subtract to time
+7.  Time Parsing/Formatting
+8.  Time Parse Example
+9.  Time Formatting Example
 10. Time Diff
 11. Time Conversion
 12. Convert time between

@@ -225,4 +225,10 @@ https://www.youtube.com/watch?v=jFfo23yIWac
 
 https://youtu.be/YS4e4q9oBaU 
 
+Logs:
+https://www.honeybadger.io/blog/golang-logging/
+https://www.section.io/engineering-education/how-to-perform-logging-for-golang-applications/
+https://appdividend.com/2022/10/25/golang-log/
+
+
 
