@@ -100,6 +100,95 @@
 11. Methods With Same Name
 12. Promoted Methods in Structure
 
+## Error handling
+Overview
+Using type which implements error interface
+Advantages of using error as a type
+Different ways of creating an error
+Using errors.New(“some_error_message”)
+Using fmt.Errorf(“error is %s”, “some_error_message”).
+Creating Custom error
+Ignoring errors
+Wrapping of error
+Unwrap an error
+Check if two error are equal
+Using the equality operator (==)
+Using the Is function of errors package
+Get the underlying error from an error represented by the error interface
+Using the .({type}) assert
+Using the As function of errors package
+Runtime Error Panic
+Calling the panic function explicitly
+Panic with defer
+Recover in golang
+Panic/Recover and Goroutine
+Printing stack trace
+Return value of the function when panic is recovered
+
+## Interfaces
+Overview
+Multiple Interfaces
+Embedding Interfaces
+Polymorphism Using Interfaces
+
+## Concurrency
+Goroutines – Concurrency
+Select Statement
+Multiple Goroutines
+Goroutine vs Thread
+Channel in Golang
+Unidirectional Channel in Golang
+Synchronization in Golang 
+ WaitGroup
+	Mutex
+
+## Date and Time
+Overview
+Structure
+Create a new time
+Using time.Now()
+Using time.Date()
+Understanding Duration
+Add or Subtract to a time
+Add to time
+Subtract to time
+Time Parsing/Formatting
+Time Parse Example
+Time Formatting Example
+Time Diff
+Time Conversion
+Convert time between different timezones
+Timers
+Tickers
+
+## Context Package
+Overview
+Context Interface
+Creating New Context
+	context.Background()
+	context.ToDo()
+Context Tree
+	Two level tree
+	Three level tree
+	Multi level tree
+Deriving From Context
+	context.WithValue()
+	context.WithCancel()
+	context.WithTimeout()
+	context.WithDeadline()
+Best Practices
+## net package
+Basic Http Project Implementation
+Overview
+Request
+Response
+Pair of API signature and its handler
+Mux
+Listener
+	Using server’s ListenAndServe function
+	Using http's ListenAndServe function
+GRPC and JSON
+
 
 
 ### Important resources and tutorials
