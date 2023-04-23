@@ -102,11 +102,17 @@
 
 ## Error handling
 Overview
+
 Using type which implements error interface
+
 Advantages of using error as a type
+
 Different ways of creating an error
+
 Using errors.New(“some_error_message”)
+
 Using fmt.Errorf(“error is %s”, “some_error_message”).
+
 Creating Custom error
 Ignoring errors
 Wrapping of error
