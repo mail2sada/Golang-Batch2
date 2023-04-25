@@ -20,6 +20,6 @@ func main() {
 
 	testSlice = append(testSlice[:5], testSlice[6:]...)
 	fmt.Println(testSlice)
-	testSlice = append(testSlice[:5], 6, testSlice[6:]...)
+	
 
 }

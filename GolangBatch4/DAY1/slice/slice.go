@@ -37,4 +37,5 @@ func main() {
 	fmt.Println("Cap", cap(mySlice))
 	fmt.Println("Len", len(mySlice))
 
+	
 }

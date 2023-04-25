@@ -16,7 +16,8 @@ func main() {
 	fmt.Println(array2)
 
 	array3 := &array1
-	fmt.Println(*array3)
+	fmt.Printf("Type of array3 %T", array3)
+	fmt.Println(array3)
 	array1[0] = 10000
 	fmt.Println(array1)
 	fmt.Println(array3)
