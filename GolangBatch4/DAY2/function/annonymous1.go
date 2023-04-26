@@ -2,26 +2,30 @@ package main
 
 import "fmt"
 
-func HigherOrderFunc(slice []string, fn func(s string)) {
+// Higher order function
+
+func IterateSlice(slice []string, fn func(val string)) {
 	for _, val := range slice {
 		fn(val)
 	}
+}
+
+func abc(testfn func(str string)) {
+	testfn("Called from abc: Hello")
 }
 
 func main() {
 
 	fmt.Println("Annonymous functions")
 
-	sl := []string{"Hello", "hi", "test", "best"}
-
 	fn := func(msg string) {
+		fmt.Println("In Annonymous function")
 		fmt.Println(msg)
 	}
-	HigherOrderFunc(sl, fn)
 
-	// fn("Hello")
+	IterateSlice([]string{"Test", "123", "abc", "xyz"}, fn)
 
-	// fn("Hi")
-
-	// fn("Test")
+	IterateSlice([]string{"A", "B", "C", "D"}, func(msg string) {
+		fmt.Println(msg)
+	})
 }
