@@ -17,7 +17,7 @@ func main() {
 			for _, v := range str {
 				fmt.Printf("%d:%c\n", cnt, v)
 			}
-			fmt.Println("idx:", cnt, val)
+			//fmt.Println("idx:", cnt, val)
 		}(val, idx)
 	}
 	wg.Wait()
